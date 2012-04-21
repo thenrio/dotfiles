@@ -1,0 +1,6 @@
+#!/bin/bash
+export  ='--enable-perlinterp'
+export CONF_OPT_PYTHON='--enable-pythoninterp'
+export CONF_OPT_RUBY='--enable-rubyinterp'
+export CONF_OPT_CSCOPE='--enable-cscope'
+export CONF_OPT_MULTIBYTE='--enable-multibyte'

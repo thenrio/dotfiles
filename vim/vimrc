@@ -26,3 +26,8 @@ set smartcase                   " ... unless they contain at least one capital l
 set nobackup
 set noswapfile
 
+"" Visual cues
+set showmatch              " brackets/braces that is
+set mat=5                  " duration to show matching brace (1/10 sec)
+set laststatus=2           " always show the status line
+set visualbell             " no bells and whistles
