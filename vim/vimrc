@@ -6,21 +6,25 @@ call pathogen#infect()
 "" http://mislav.uniqpath.com/2011/12/vim-revisited/
 "" http://nvie.com/posts/how-i-boosted-my-vim/
 syntax enable
-set encoding=utf-8
 set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
 
-"" Whitespace
+"" space, tab
 set nowrap                      " don't wrap lines
 set tabstop=2 shiftwidth=2      " a tab is two spaces (or set this to 4)
 set expandtab                   " use spaces, not tabs (optional)
 set backspace=indent,eol,start  " backspace through everything in insert mode
 
-"" Searching
+"" Search
 set hlsearch                    " highlight matches
 set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
+"" mouse
+set mouse=a                     " enable using the mouse if terminal emulator
+                                "    supports it (xterm does)
+"" paste
+set pastetoggle=<F2>
 
 "" Backup
 set nobackup
@@ -30,4 +34,34 @@ set noswapfile
 set showmatch              " brackets/braces that is
 set mat=5                  " duration to show matching brace (1/10 sec)
 set laststatus=2           " always show the status line
-set visualbell             " no bells and whistles
+set visualbell             " no bells 
+
+" encoding
+set encoding=utf-8
+
+"" Vim behaviour {{{
+set hidden                      " hide buffers instead of closing them this
+                                "    means that the current buffer can be put
+                                "    to background without being written; and
+                                "    that marks and undo history are preserved
+set switchbuf=useopen           " reveal already opened files from the
+                                " quickfix window instead of opening new
+                                " buffers
+set history=1000                " remember more commands and search history
+set undolevels=1000             " use many muchos levels of undo
+set undofile                " keep a persistent backup file
+set undodir=~/tmp,/tmp
+"" }}}
+
+" mappings {{{
+"" Change the mapleader from \ to ,
+let mapleader=","
+
+" Shortcut mappings {{{
+" might do it in VISUAL mode ... dunno :) 
+nnoremap ; :
+
+" Quickly edit/reload the vimrc file
+nmap <silent> <leader>ev :e $MYVIMRC<CR>
+nmap <silent> <leader>sv :so $MYVIMRC<CR>
+" }}}
