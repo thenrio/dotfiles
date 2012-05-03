@@ -13,7 +13,6 @@ export COPYFILE_DISABLE=true
 
 # sugar git prompt
 . ~/.gitprompt.bash
-. /usr/local/etc/bash_completion.d/git-completion.bash
 
 # npm http://stackoverflow.com/questions/5919629/express-module-not-found-when-installed-with-npm
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
@@ -27,6 +26,12 @@ export ANDROID_HOME=~/bin/android-sdk-r15
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# bash completion is broken!
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
+fi
+
 ###-begin-npm-completion-###
 #
 # npm command completion script
