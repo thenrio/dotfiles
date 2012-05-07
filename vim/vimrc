@@ -61,6 +61,12 @@ set undofile                    " keep a persistent backup file
 set undodir=~/tmp,/tmp
 " }}}
 
+" plugin configuration {{{
+" ctrlp
+let g:ctrlp_working_path_mode = 0 " don’t manage working directory.
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/* " do not scan
+" }}}
+
 " mappings {{{
 " Change the mapleader from \ to ,
 let mapleader=","
