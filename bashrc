@@ -27,6 +27,9 @@ export ANDROID_HOME=~/bin/android-sdk-r15
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+# python
+export PYTHONSTARTUP=~/.python/pythonrc
+
 # bash completion is broken!
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
