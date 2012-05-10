@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
-dir=`dirname $0`
-exec "${dir}"/$0
+scselect $1
+if [ -f ~/.networks/$1 ]; then 
+  . ~/.networks/$1
+fi
