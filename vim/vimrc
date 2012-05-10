@@ -19,9 +19,9 @@ set backspace=indent,eol,start  " backspace through everything in insert mode
 set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
-" mouse
-set mouse=a                     " enable using the mouse if terminal emulator
-                                "    supports it (xterm does)
+
+" mouse is disabled set mouse=a to enable it or toggle mouse (F4)
+
 " paste
 set pastetoggle=<F2>
 
@@ -32,9 +32,10 @@ set noswapfile
 " UI
 set showmatch              " brackets/braces that is
 set mat=5                  " duration to show matching brace (1/10 sec)
-set laststatus=2           " always show the status line
 set visualbell             " no bells 
 set ruler                  " show line and col
+set laststatus=2           " always show the status line
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 set nolazyredraw           " turn off lazy redraw
 set wildmenu               " turn on wild menu
 set wildmode=list:longest,full
@@ -63,7 +64,6 @@ set undodir=~/tmp,/tmp
 
 " plugin configuration {{{
 " ctrlp
-let g:ctrlp_working_path_mode = 0 " don’t manage working directory.
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/* " do not scan
 " }}}
 
