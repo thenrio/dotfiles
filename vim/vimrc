@@ -10,7 +10,6 @@ set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
 
 " space, tab
-set nowrap                      " don't wrap lines
 set tabstop=2 shiftwidth=2      " a tab is two spaces (or set this to 4)
 set expandtab                   " use spaces, not tabs (optional)
 set backspace=indent,eol,start  " backspace through everything in insert mode
@@ -31,8 +30,8 @@ set noswapfile
 
 " UI
 set showmatch              " brackets/braces that is
-set mat=5                  " duration to show matching brace (1/10 sec)
-set visualbell             " no bells 
+set matchtime=5            " duration to show matching brace (1/10 sec)
+set visualbell             " no bells
 set ruler                  " show line and col
 set laststatus=2           " always show the status line
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
@@ -64,7 +63,8 @@ set undodir=~/tmp,/tmp
 
 " plugin configuration {{{
 " ctrlp
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/* " do not scan
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/* " vim globpath() ignore these
+let g:ctrlp_custom_ignore = {'file' : '\.pyc$'}      " ctrlp ignore also these one 
 " }}}
 
 " mappings {{{
@@ -79,3 +79,11 @@ nnoremap ; :
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 " }}}
+
+" ---------------------------------------------------------------------------
+"  Strip all trailing whitespace in file
+" ---------------------------------------------------------------------------
+function! StripWhitespace()
+  exec ':%s/ \+$//'
+endfunction
+map <leader>s :call StripWhitespace()<CR>
