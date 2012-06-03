@@ -58,7 +58,7 @@ set switchbuf=useopen           " reveal already opened files from the
 set history=1000                " remember more commands and search history
 set undolevels=1000             " use many muchos levels of undo
 set undofile                    " keep a persistent backup file
-set undodir=~/tmp,/tmp
+set undodir=~/tmp/vim,/tmp
 " }}}
 
 " plugin configuration {{{
