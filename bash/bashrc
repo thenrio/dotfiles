@@ -38,6 +38,9 @@ fi
 # octave
 OCTAVE_HOME=~/craft/ml
 
+# vagrant
+export VAGRANT_LOG=INFO
+
 ###-begin-npm-completion-###
 #
 # npm command completion script
