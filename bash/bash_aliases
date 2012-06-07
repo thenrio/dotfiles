@@ -18,7 +18,7 @@ alias clipme='eclipse >& /dev/null'
 alias cdj='cd ~/src/js'
 # python
 alias cdpy='cd ~/src/python'
-alias pyenvd='. ~/src/python/virtualenvs/2.7.3/bin/activate'
+. ~/src/dotfiles/me/bash/pyenv
 # ruby
 alias cdr='cd ~/src/ruby'
 alias cdconf='cdr; cd conference-app'
