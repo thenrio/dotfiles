@@ -1,0 +1,20 @@
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[user]
+	name = thierry
+	email = thierry.henrio@gmail.com
+[github]
+	user = thierryhenrio
+[merge]
+	conflictstyle = diff3	
+[core]
+	excludesfile = ~/.gitignore
+[branch]
+	autosetuprebase = always
+[alias]
+	co = checkout
+	l = log --pretty=oneline --abbrev-commit
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative

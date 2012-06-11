@@ -1,0 +1,21 @@
+## MAC OS
+.DS_Store
+
+# ruby mine
+.idea/
+
+# libreoffice
+.~*#
+
+## TEXTMATE
+*.tmproj
+
+## rvm
+.rvmrc
+
+## rbenv
+.rbenv-version
+.rbenv-gemset
+
+## ctags, i name them .tags
+.tags
