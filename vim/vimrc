@@ -67,6 +67,21 @@ set wildignore+=*/.git/*,*/.hg/*,*/.svn/* " vim globpath() ignore these
 let g:ctrlp_custom_ignore = {'file' : '\.pyc$'}      " ctrlp ignore also these one 
 " }}}
 
+" ---------------------------------------------------------------------------
+" tags {{{
+" ---------------------------------------------------------------------------
+set tags=./.tags
+" }}} 
+
+" ---------------------------------------------------------------------------
+" funs {{{
+" ---------------------------------------------------------------------------
+function! StripWhitespace()
+  exec ':%s/ \+$//'
+endfunction
+" }}} 
+
+
 " mappings {{{
 " Change the mapleader from \ to ,
 let mapleader=","
@@ -78,12 +93,6 @@ nnoremap ; :
 " Quickly edit/reload the vimrc file
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
-" }}}
 
-" ---------------------------------------------------------------------------
-"  Strip all trailing whitespace in file
-" ---------------------------------------------------------------------------
-function! StripWhitespace()
-  exec ':%s/ \+$//'
-endfunction
 map <leader>s :call StripWhitespace()<CR>
+" }}}
