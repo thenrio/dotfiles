@@ -17,5 +17,10 @@
 .rbenv-version
 .rbenv-gemset
 
+## eclipse
+.settings/
+.classpath
+
+
 ## ctags, i name them .tags
 .tags
