@@ -1,0 +1,1 @@
+alias ppass=`cat ~/jobs/orange/proxy/pass | tr -d '\n' | pbcopy`

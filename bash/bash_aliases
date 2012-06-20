@@ -18,7 +18,6 @@ alias clipme='eclipse >& /dev/null'
 alias cdj='cd ~/src/js'
 # python
 alias cdpy='cd ~/src/python'
-. ~/src/dotfiles/me/bash/pyenv
 # ruby
 alias cdr='cd ~/src/ruby'
 alias cdconf='cdr; cd conference-app'
@@ -35,3 +34,6 @@ alias cleanlog='rm -v *.log'
 
 # spork
 alias sporkuk='spork cucumber --port 12345'
+
+# aliases are in small files
+for f in ~/src/dotfiles/me/bash/aliases.d/* ; do . $f; done
