@@ -89,6 +89,7 @@ let mapleader=","
 " Shortcut mappings {{{
 " might do it in VISUAL mode ... dunno :) 
 nnoremap ; :
+vnoremap ; :
 
 " Quickly edit/reload the vimrc file
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
