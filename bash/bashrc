@@ -1,4 +1,6 @@
-. ~/.bash_aliases
+# FIXME __dirname__=`dirname $(readlink "$0")`
+__dirname__=~/src/dotfiles/me/bash
+. "${__dirname__}/aliases"
 
 # have a self bin path
 export PATH=$HOME/bin:$PATH
