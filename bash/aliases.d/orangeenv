@@ -1,0 +1,3 @@
+# look ma, duplication
+alias ppass="cat ~/jobs/orange/pass/proxy | tr -d '\n' | pbcopy"
+alias adpass="cat ~/jobs/orange/pass/ad | tr -d '\n' | pbcopy"
