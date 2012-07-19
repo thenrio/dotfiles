@@ -64,7 +64,10 @@ set undodir=~/tmp/vim,/tmp
 " plugin configuration {{{
 " ctrlp
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/* " vim globpath() ignore these
-let g:ctrlp_custom_ignore = {'file' : '\.pyc$'}      " ctrlp ignore also these one 
+let g:ctrlp_custom_ignore = {
+  \ 'dir' : 'node_modules$',
+  \ 'file' : '\.pyc$',
+  \ }
 " }}}
 
 " ---------------------------------------------------------------------------
