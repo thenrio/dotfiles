@@ -84,13 +84,17 @@ function! StripWhitespace()
 endfunction
 " }}} 
 
+" commands {{{
+command! EditParentDirectory e %:p:h
+" }}}
+
 
 " mappings {{{
 " Change the mapleader from \ to ,
 let mapleader=","
 
 " Shortcut mappings {{{
-" might do it in VISUAL mode ... dunno :) 
+" saves on left shift... kills ; binding in normal and visual mode 
 nnoremap ; :
 vnoremap ; :
 
@@ -98,5 +102,5 @@ vnoremap ; :
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
-map <leader>s :call StripWhitespace()<CR>
+nmap <leader>s :call StripWhitespace()<CR>
 " }}}
