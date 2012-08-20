@@ -5,23 +5,30 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " vundle {{{
+
 Bundle 'gmarik/vundle'
 
+" snippets
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 Bundle 'honza/snipmate-snippets'
 Bundle 'garbas/vim-snipmate'
 
+" fuzzy finder
+Bundle 'kien/ctrlp.vim'
+
+" general pope
 Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-repeat'
 
-Bundle 'kien/ctrlp.vim'
-
+" langages
 Bundle 'vim-ruby/vim-ruby'
+Bundle 'tpope/vim-rails'
 Bundle 'vim-scripts/vim-coffee-script'
+Bundle 'plasticboy/vim-markdown'
+
 " }}}
 "
 
@@ -84,13 +91,21 @@ set undodir=~/tmp/vim,/tmp
 " }}}
 
 " plugin configuration {{{
+" ---------------------------------------------------------------------------
 " ctrlp
+" ---------------------------------------------------------------------------
 let g:ctrlp_working_path_mode = 1         " the parent directory of the current file
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/* " vim globpath() ignore these
 let g:ctrlp_custom_ignore = {
-  \ 'dir' : 'node_modules$',
+  \ 'dir' : 'node_modules$, \.eunit',
   \ 'file' : '\.pyc$',
   \ }
+ 
+" ---------------------------------------------------------------------------
+" conque
+" ---------------------------------------------------------------------------
+let g:ConqueTerm_ReadUnfocused = 1
+
 " }}}
 
 " ---------------------------------------------------------------------------
