@@ -1,3 +1,6 @@
-# look ma, duplication
-alias ppass="cat ~/jobs/orange/pass/proxy | tr -d '\n' | pbcopy"
-alias adpass="cat ~/jobs/orange/pass/ad | tr -d '\n' | pbcopy"
+#!/usr/bin/env bash
+pass_dir=~/jobs/orange/pass.d
+
+for f in $(ls "${pass_dir}"); do
+  alias "${f}pass"="cat ${pass_dir}/${f} | tr -d '\n' | pbcopy"
+done
