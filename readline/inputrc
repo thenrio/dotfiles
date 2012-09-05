@@ -1,0 +1,4 @@
+set show-all-if-ambiguous on
+control-p: history-search-backward
+control-n: history-search-forward
+"\e[3~": delete-char
