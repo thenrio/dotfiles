@@ -97,17 +97,10 @@ set undodir=~/tmp/vim,/tmp
 let g:ctrlp_working_path_mode = 1         " the parent directory of the current file
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/* " vim globpath() ignore these
 let g:ctrlp_custom_ignore = {
-  \ 'dir' : 'node_modules$, \.eunit',
-  \ 'file' : '\.pyc$',
+  \ 'dir'   : '\v[\/](node_modules|\.eunit|coverage)$',
+  \ 'file'  : '\.pyc$',
   \ }
  
-" ---------------------------------------------------------------------------
-" conque
-" ---------------------------------------------------------------------------
-let g:ConqueTerm_ReadUnfocused = 1
-
-" }}}
-
 " ---------------------------------------------------------------------------
 " tags {{{
 " ---------------------------------------------------------------------------
