@@ -1,0 +1,11 @@
+# ~/.tmuxinator/bar.yml
+# you can make as many tabs as you wish...
+
+project_name: swarm
+project_root: ~/src/dojo/swarm
+tabs:
+  - editor:
+      layout: main-horizontal
+      panes:
+        - vim .
+        - guard

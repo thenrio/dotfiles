@@ -1,0 +1,10 @@
+# you can make as many tabs as you wish...
+
+project_name: sailor
+project_root: .
+tabs:
+  - editor:
+      layout: main-horizontal
+      panes:
+        - vim .
+        - 
