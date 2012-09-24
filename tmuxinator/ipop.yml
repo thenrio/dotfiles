@@ -1,0 +1,12 @@
+# ~/.tmuxinator/bar.yml
+# you can make as many tabs as you wish...
+
+project_name: ipop
+project_root: .
+tabs:
+  - editor:
+      layout: main-horizontal
+      panes:
+        - vim .
+        - 
+  - mvn:

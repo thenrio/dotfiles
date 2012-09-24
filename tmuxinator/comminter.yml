@@ -1,0 +1,15 @@
+# you can make as many tabs as you wish...
+
+project_name: comminter
+project_root: ~/src/ruby/customers/comminter/x-project
+tabs:
+  - hack :
+      layout: main-horizontal
+      panes:
+        - vim .
+        - 
+  - server :
+      layout: main-horizontal
+      panes:
+        -
+        - 
