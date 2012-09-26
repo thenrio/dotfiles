@@ -95,10 +95,9 @@ set undodir=~/tmp/vim,/tmp
 " ctrlp
 " ---------------------------------------------------------------------------
 let g:ctrlp_working_path_mode = 'rc'
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/* " vim globpath() ignore these
-let g:ctrlp_custom_ignore = {
-  \ 'dir'   : '\v[\/](node_modules|\.eunit|coverage)$',
-  \ 'file'  : '\.pyc$',
+let g:ctrlp_custom_ignore = { 
+  \ 'dir':  '\.git$\|\.hg$\|\.svn$', 
+  \ 'file': '\.exe$\|\.so$\|\.dll$',
   \ }
  
 " ---------------------------------------------------------------------------
