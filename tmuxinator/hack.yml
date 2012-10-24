@@ -8,3 +8,8 @@ tabs:
       panes:
         - vim .
         - 
+  - shell:
+      layout: main-horizontal
+      panes:
+        - 
+        - 

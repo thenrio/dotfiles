@@ -6,10 +6,13 @@ socket_name   : ipop
 project_root  : ~/src/java/orange/ipop/ipop-portal
 pre           : . ~/src/java/orange/ipop/env.sh
 tabs:
-  - editor:
+  - app:
       layout: main-horizontal
       panes:
-        - vim .
-        - 
-  - build:
-  - logs:
+        - ssh ipop.int.ipsweb01
+        - ssh ipop.int.ipsweb01
+  - rbus:
+      layout: main-horizontal
+      panes:
+        - ssh ipop.int.rbus
+        - ssh ipop.int.rbus

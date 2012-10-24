@@ -28,6 +28,7 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
 Bundle 'vim-scripts/vim-coffee-script'
 Bundle 'plasticboy/vim-markdown'
+Bundle 'lukaszb/vim-web-indent.git'
 
 " }}}
 "
@@ -91,14 +92,22 @@ set undodir=~/tmp/vim,/tmp
 " }}}
 
 " plugin configuration {{{
+
 " ---------------------------------------------------------------------------
-" ctrlp
+" netrw {{{
+" ---------------------------------------------------------------------------
+let g:netrw_liststyle= 3
+" }}} 
+
+" ---------------------------------------------------------------------------
+" ctrlp {{{
 " ---------------------------------------------------------------------------
 let g:ctrlp_working_path_mode = 'rc'
 let g:ctrlp_custom_ignore = { 
   \ 'dir':  '\.git$\|\.hg$\|\.svn$', 
   \ 'file': '\.exe$\|\.so$\|\.dll$',
   \ }
+" }}} 
  
 " ---------------------------------------------------------------------------
 " tags {{{

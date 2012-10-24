@@ -16,3 +16,6 @@
 
 ## ctags, i name them .tags
 .tags
+
+## bloody pyc
+*.pyc
