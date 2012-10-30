@@ -4,3 +4,6 @@ pass_dir=~/jobs/orange/pass.d
 for f in $(ls "${pass_dir}"); do
   alias "${f}pass"="cat ${pass_dir}/${f} | tr -d '\n' | pbcopy"
 done
+
+# projects
+alias cdipop="source ~/src/java/orange/ipop/env.sh; cd ~/src/java/orange/ipop/portal/ipop-ui"
