@@ -29,6 +29,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'vim-scripts/vim-coffee-script'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'lukaszb/vim-web-indent.git'
+Bundle 'juvenn/mustache.vim.git'
 
 " }}}
 "
