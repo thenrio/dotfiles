@@ -1,3 +1,15 @@
+# have a self bin path
+export PATH=$HOME/bin:$PATH
+# brew install nginx in /usr/local/sbin
+export PATH=$PATH:/usr/local/sbin
+
+# exit hook for non interractive session (git clone)
+if [ -z "$PS1" ]; then
+  # this is added by /etc/paths ... did not grep when it is read :) 
+  export PATH="$PATH:/usr/local/bin"
+  return
+fi
+
 set -o vi
 # FIXME __dirname__=`dirname $(readlink "$0")`
 __dirname__=~/src/dotfiles/me/bash
@@ -5,11 +17,6 @@ __dirname__=~/src/dotfiles/me/bash
 . "${__dirname__}/aliases"
 # other sources
 for f in "${__dirname__}/sources.d/*" ; do . $f; done
-
-# have a self bin path
-export PATH=$HOME/bin:$PATH
-# brew install nginx in /usr/local/sbin
-export PATH=$PATH:/usr/local/sbin
 
 # editor
 export EDITOR='vim'
@@ -45,4 +52,4 @@ fi
 OCTAVE_HOME=~/craft/ml
 
 # vagrant
-export VAGRANT_LOG=INFO
+# export VAGRANT_LOG=INFO

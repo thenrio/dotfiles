@@ -1,6 +1,7 @@
 # you can make as many tabs as you wish...
 
-project_name: sailor
+project_name  : hack
+socket_name   : hack
 project_root: .
 tabs:
   - editor:

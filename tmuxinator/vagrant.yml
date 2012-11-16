@@ -1,0 +1,11 @@
+# you can make as many tabs as you wish...
+
+project_name  : vagrant
+socket_name   : vagrant
+project_root  : .
+tabs:
+  - vms:
+      layout: vertical
+      panes:
+        -
+        - 
