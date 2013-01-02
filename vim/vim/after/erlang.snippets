@@ -1,0 +1,13 @@
+# eunit snippets
+snippet eunit
+	-module(gattaca_tests).
+
+	-ifdef( TEST ).
+	-include_lib("eunit/include/eunit.hrl").
+	-endif.
+
+snippet test
+	${1:function}_test_() ->
+	  [
+		?_assertEqual( ${2:expected}, ${3:expression} )
+	  ].

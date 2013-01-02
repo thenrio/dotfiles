@@ -93,55 +93,40 @@ set undofile                    " keep a persistent backup file
 set undodir=~/tmp/vim,/tmp
 " }}}
 
-" plugin configuration {{{
-
-" ---------------------------------------------------------------------------
-" netrw {{{
-" ---------------------------------------------------------------------------
-let g:netrw_liststyle= 3
-" }}} 
-
-" ---------------------------------------------------------------------------
-" ctrlp {{{
-" ---------------------------------------------------------------------------
-let g:ctrlp_working_path_mode = 'rc'
-let g:ctrlp_custom_ignore = { 
-  \ 'dir':  'node_modules$\|\.git$\|\.hg$\|\.svn$', 
-  \ 'file': '\.exe$\|\.so$\|\.dll$',
-  \ }
-" }}} 
- 
 " ---------------------------------------------------------------------------
 " tags {{{
 " ---------------------------------------------------------------------------
-set tags=./.tags
-" }}} 
-
-" ---------------------------------------------------------------------------
-" funs {{{
-" ---------------------------------------------------------------------------
-function! StripWhitespace()
-  exec ':%s/ \+$//'
-endfunction
-" }}} 
-
-" commands {{{
-command! EditParentDirectory e %:p:h
+" main mapping, go to first matching tag
+map tt <c-]>
 " }}}
 
-
+" ---------------------------------------------------------------------------
 " mappings {{{
+" ---------------------------------------------------------------------------
 " Change the mapleader from \ to ,
 let mapleader=","
 
 " Shortcut mappings {{{
-" saves on left shift... kills ; binding in normal and visual mode 
+" saves on left shift... kills ; binding in normal and visual mode
 nnoremap ; :
 vnoremap ; :
+
+" Reselect visual block after indent/outden
+vnoremap < <gv
+vnoremap > >gv
 
 " Quickly edit/reload the vimrc file
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
+" }}}
+
+" ---------------------------------------------------------------------------
+" strip white spaces {{{
+" ---------------------------------------------------------------------------
+function! StripWhitespace()
+  exec ':%s/ \+$//'
+endfunction
+" }}}
 
 nmap <leader>s :call StripWhitespace()<CR>
 " }}}
