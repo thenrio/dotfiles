@@ -1,18 +1,16 @@
 # ~/.tmuxinator/bar.yml
-# you can make as many tabs as you wish...
 
 project_name  : ipop
 socket_name   : ipop
-project_root  : ~/src/java/orange/ipop/ipop-portal
-pre           : . ~/src/java/orange/ipop/env.sh
+project_root  : .
 tabs:
   - app:
-      layout: main-horizontal
+      layout: horizontal
       panes:
-        - ssh ipop.int.ipsweb01
-        - ssh ipop.int.ipsweb01
+        - 
+        - 
   - rbus:
-      layout: main-horizontal
+      layout: horizontal
       panes:
-        - ssh ipop.int.rbus
-        - ssh ipop.int.rbus
+        - 
+        - 
