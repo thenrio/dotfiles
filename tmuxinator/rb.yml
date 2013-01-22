@@ -1,0 +1,14 @@
+# you can make as many tabs as you wish...
+
+project_name  : rb
+socket_name   : rb
+project_root: .
+tabs:
+  - code:
+      layout: main-horizontal
+      panes:
+        - vim .
+        - 
+  - pry:
+      panes:
+        - pry 
