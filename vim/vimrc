@@ -22,9 +22,14 @@ Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-endwise'
+
+" matchit
+Bundle 'edsono/vim-matchit'
 
 " langages
 Bundle 'vim-ruby/vim-ruby'
+Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'tpope/vim-rails'
 Bundle 'vim-scripts/vim-coffee-script'
 Bundle 'plasticboy/vim-markdown'
@@ -128,5 +133,5 @@ function! StripWhitespace()
 endfunction
 " }}}
 
-nmap <leader>s :call StripWhitespace()<CR>
+nmap <leader>s :call StripWhitespace()<CR>:w<CR>
 " }}}
