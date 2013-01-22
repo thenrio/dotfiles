@@ -1,9 +1,12 @@
+# function body
+snippet fn
+	${1:fn}( ${2:params} ) ->
+	.
+
 # eunit snippets
 snippet eunit
-	-module(gattaca_tests).
-
 	-ifdef( TEST ).
-	-include_lib("eunit/include/eunit.hrl").
+	-include_lib( "eunit/include/eunit.hrl" ).
 	-endif.
 
 snippet test
