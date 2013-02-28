@@ -1,7 +1,7 @@
 # you can make as many tabs as you wish...
 
-project_name  : hack
-socket_name   : hack
+project_name  : src
+socket_name   : src
 project_root: .
 tabs:
   - editor:
@@ -9,9 +9,7 @@ tabs:
       panes:
         - vim .
         - 
-  - repl:
-       - 
-  - run:
-       - 
-  - eval:
-       - 
+  - shell:
+      # layout: main-horizontal
+      # panes:
+      #   - 
