@@ -1,0 +1,2 @@
+# vi : set ft=bash
+eval "$(grunt --completion=bash)"
