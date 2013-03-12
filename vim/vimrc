@@ -17,15 +17,18 @@ Bundle 'garbas/vim-snipmate'
 " fuzzy finder
 Bundle 'kien/ctrlp.vim'
 
-" general pope
-Bundle 'tpope/vim-commentary'
-Bundle 'tpope/vim-fugitive'
+" edit
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-endwise'
-
-" matchit
 Bundle 'edsono/vim-matchit'
+
+" code
+Bundle 'tpope/vim-commentary'
+
+" git
+Bundle 'tpope/vim-fugitive'
+Bundle 'airblade/vim-gitgutter'
 
 " langages
 Bundle 'vim-ruby/vim-ruby'
