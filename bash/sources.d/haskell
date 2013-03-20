@@ -1,2 +1,2 @@
 # vi : set ft=bash
-export PATH=${PATH}:~/.cabal/bin
+export PATH="${PATH}:${HOME}/.cabal/bin"
