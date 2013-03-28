@@ -1,4 +1,8 @@
+set editing-mode vi
+
 set show-all-if-ambiguous on
 control-p: history-search-backward
 control-n: history-search-forward
+control-l: clear-screen
 "\e[3~": delete-char
+
