@@ -8,6 +8,9 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
+" color
+Bundle 'altercation/vim-colors-solarized'
+
 " snippets
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
@@ -48,6 +51,10 @@ Bundle 'nono/vim-handlebars'
 syntax enable
 set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
+
+" color
+set background=dark
+colorscheme solarized
 
 " space, tab
 set tabstop=2 shiftwidth=2      " a tab is two spaces (or set this to 4)
