@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# vim: set ft=bash :
+pass_dir=~/jobs/orange/beaumanoir/pass.d
+
+for f in $(ls "${pass_dir}"); do
+  alias "${f}pass"="cat ${pass_dir}/${f} | tr -d '\n' | pbcopy"
+done
