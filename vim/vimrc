@@ -35,6 +35,7 @@ Bundle 'airblade/vim-gitgutter'
 
 " langages
 Bundle 'vim-ruby/vim-ruby'
+Bundle 'klen/python-mode'
 Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'tpope/vim-rails'
 Bundle 'vim-scripts/vim-coffee-script'
