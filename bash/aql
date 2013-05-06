@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 proxy=http://SNNN7355:\*3mzFT7YFA@www-cache.aql.fr:3128
+ftp_proxy=http://vis:visiteur@spike.aql.fr:3128 \
 http_proxy=${proxy} \
 https_proxy=${proxy} \
 ALL_PROXY=${proxy} \
