@@ -1,6 +1,0 @@
-# -*- mode: bash -*-
-# vi: set ft=bash :
-for v in 2.4.6 2.7.3
-do 
-  alias pyenv${v}=". ~/src/python/virtualenvs/${v}/bin/activate"
-done

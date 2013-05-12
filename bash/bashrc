@@ -1,5 +1,5 @@
-# have a self bin path
-export PATH=$HOME/bin:$PATH
+# prepend a self bin path and prepend local python share path
+export PATH=$HOME/bin:/usr/local/share/python:$PATH
 # brew install nginx in /usr/local/sbin
 export PATH=$PATH:/usr/local/sbin
 

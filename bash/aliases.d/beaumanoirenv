@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# vim: set ft=bash :
+# vim: set ft=sh :
 pass_dir=~/jobs/orange/beaumanoir/pass.d
 
 for f in $(ls "${pass_dir}"); do
