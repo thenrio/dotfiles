@@ -1,0 +1,3 @@
+# -*- mode: bash -*-
+# vi: set ft=sh :
+export PATH=${PATH}:/usr/local/share/npm/bin
