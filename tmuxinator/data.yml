@@ -4,14 +4,20 @@ project_name  : data
 socket_name   : data
 project_root: .
 tabs:
-  - command:
-       - 
+  - db:
+      layout: main-horizontal
+      panes:
+        - ll
+        - 
+  - run:
+      layout: main-horizontal
+      panes:
+        - 
+        - 
+  - eval:
+       -
   - editor:
       layout: main-horizontal
       panes:
         - vim .
-        - 
-  - run:
-       - 
-  - eval:
-       - 
+        -
