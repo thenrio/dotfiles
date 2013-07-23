@@ -1,0 +1,3 @@
+# -*- mode: bash -*-
+# vi: set ft=sh :
+export PATH=/Applications/Vagrant/bin:$PATH

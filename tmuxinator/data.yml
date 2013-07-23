@@ -4,20 +4,19 @@ project_name  : data
 socket_name   : data
 project_root: .
 tabs:
-  - db:
+  - mysql:
       layout: main-horizontal
       panes:
         - ll
         - 
+  - sqlite3:
+      -
   - run:
       layout: main-horizontal
       panes:
         - 
         - 
   - eval:
-       -
+      -
   - editor:
-      layout: main-horizontal
-      panes:
-        - vim .
-        -
+      - vim .
