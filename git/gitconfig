@@ -10,6 +10,7 @@
 	user = thierryhenrio
 [merge]
 	conflictstyle = diff3	
+	tool = fugitive
 [core]
 	excludesfile = ~/.gitignore
 [branch]
@@ -25,3 +26,5 @@
 	enabled = 1
 [push]
 	default = upstream
+[mergetool "fugitive"]
+	cmd = vim -f -c \"Gdiff\" \"$MERGED\"
