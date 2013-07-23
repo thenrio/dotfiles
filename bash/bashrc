@@ -1,11 +1,12 @@
-# prepend a self bin path and prepend local python share path
-export PATH=$HOME/bin:/usr/local/share/python:$PATH
-# brew install nginx in /usr/local/sbin
-export PATH=$PATH:/usr/local/sbin
+# see /etc/paths
+# append a self bin path
+export PATH=$PATH:$HOME/bin
+# prepend local python share path
+export PATH=$PATH:/usr/local/share/python
 
 # exit hook for non interractive session (git clone)
 if [ -z "$PS1" ]; then
-  # this is added by /etc/paths ... did not grep when it is read :) 
+  # this is added by /etc/paths ... did not grep when it is read :)
   export PATH="$PATH:/usr/local/bin"
   return
 fi
@@ -15,7 +16,7 @@ set -o vi
 __dirname__=~/src/dotfiles/me/bash
 # aliases
 . ${__dirname__}/aliases
-# other sources
+# sources
 for f in ${__dirname__}/sources.d/* ; do . $f; done
 
 # editor
@@ -37,7 +38,7 @@ export JAVA_HOME=`/usr/libexec/java_home`
 export ANDROID_HOME=~/bin/android-sdk-r15
 
 # rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$PATH:$HOME/.rbenv/bin"
 eval "$(rbenv init -)"
 
 # python
