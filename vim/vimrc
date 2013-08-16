@@ -54,7 +54,7 @@ set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
 
 " color
-set background=light
+set background=dark
 colorscheme solarized
 
 " space, tab
