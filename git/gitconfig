@@ -28,3 +28,5 @@
 	default = upstream
 [mergetool "fugitive"]
 	cmd = vim -f -c \"Gdiff\" \"$MERGED\"
+[url "https://"]
+	insteadOf = git://
