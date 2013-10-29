@@ -9,6 +9,11 @@ tabs:
       panes:
         - ll
         - 
+  - pg:
+      layout: main-horizontal
+      panes:
+        - ll
+        - 
   - sqlite3:
       -
   - run:
