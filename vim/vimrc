@@ -5,7 +5,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " vundle {{{
-
+" vim +BundleInstall +qall
 Bundle 'gmarik/vundle'
 
 " color
@@ -44,6 +44,8 @@ Bundle 'lukaszb/vim-web-indent.git'
 Bundle 'juvenn/mustache.vim.git'
 Bundle 'nono/vim-handlebars'
 
+" art
+Bundle 'vim-scripts/DrawIt'
 " }}}
 "
 
@@ -54,7 +56,7 @@ set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
 
 " color
-set background=dark
+set background=light
 colorscheme solarized
 
 " space, tab
