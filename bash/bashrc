@@ -26,10 +26,6 @@ export COPYFILE_DISABLE=true
 # sugar git prompt
 . ~/.gitprompt.bash
 
-# npm http://stackoverflow.com/questions/5919629/express-module-not-found-when-installed-with-npm
-export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
-source /usr/local/lib/node_modules/npm/lib/utils/completion.sh
-
 # java
 export JAVA_HOME=`/usr/libexec/java_home`
 # android
