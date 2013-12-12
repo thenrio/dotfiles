@@ -2,6 +2,11 @@
 # append a self bin path
 export PATH=$PATH:$HOME/bin
 
+# langs ( python crash )
+# http://patrick.arminio.info/blog/2012/02/fix-valueerror-unknown-locale-utf8/
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 # exit hook for non interractive session (git clone)
 if [ -z "$PS1" ]; then
   # this is added by /etc/paths ... did not grep when it is read :)
@@ -42,9 +47,6 @@ export PYTHONSTARTUP=~/.python/pythonrc
 if [ -x `which brew` ]  && [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
-
-# octave
-OCTAVE_HOME=~/craft/ml
 
 # vagrant
 # export VAGRANT_LOG=INFO

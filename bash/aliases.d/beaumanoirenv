@@ -6,3 +6,5 @@ if [ -d "$pass_dir" ]; then
     alias "${f}pass"="cat ${pass_dir}/${f} | tr -d '\n' | pbcopy"
   done
 fi
+
+alias cdbo="cdja; cd orange/beaumanoir"

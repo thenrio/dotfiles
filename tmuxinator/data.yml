@@ -4,11 +4,6 @@ project_name  : data
 socket_name   : data
 project_root: .
 tabs:
-  - mysql:
-      layout: main-horizontal
-      panes:
-        - ll
-        - 
   - pg:
       layout: main-horizontal
       panes:
