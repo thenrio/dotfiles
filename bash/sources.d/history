@@ -1,0 +1,4 @@
+# -*- mode: bash -*-
+# vi: set ft=sh :
+export HISTCONTROL=erasedups
+export HISTSIZE=10000
