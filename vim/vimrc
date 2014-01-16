@@ -26,6 +26,9 @@ Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-endwise'
 Bundle 'edsono/vim-matchit'
 
+" command
+Bundle 'tpope/vim-unimpaired'
+
 " code
 Bundle 'tpope/vim-commentary'
 
