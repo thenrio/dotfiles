@@ -25,26 +25,12 @@ for f in ${__dirname__}/sources.d/* ; do . $f; done
 # editor
 export EDITOR='vim'
 
-# prevent tar from creating ._ files
-export COPYFILE_DISABLE=true
-
-# sugar git prompt
-. ~/.gitprompt.bash
-
-# java
-export JAVA_HOME=`/usr/libexec/java_home`
-# android
-export ANDROID_HOME=~/bin/android-sdk-r15
-
 # rbenv
 export PATH="$PATH:$HOME/.rbenv/bin"
 eval "$(rbenv init -)"
 
-# python
-export PYTHONSTARTUP=~/.python/pythonrc
-
-# bash completion is broken!
-if [ -x `which brew` ]  && [ -f `brew --prefix`/etc/bash_completion ]; then
+# bash completion on osx is broken!
+if [  $( command -v brew ) ]  && [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 

@@ -1,5 +1,13 @@
 # -*- mode: bash -*-
 # vi: set ft=sh :
+export PYTHONSTARTUP=~/.python/pythonrc
+
 export WORKON_HOME=${HOME}/.virtualenvs
 export PROJECT_HOME=${HOME}/src/python
-. /usr/local/bin/virtualenvwrapper.sh
+
+if systemis nux; then
+  . /etc/bash_completion.d/virtualenvwrapper
+else
+  . /usr/local/bin/virtualenvwrapper.sh
+fi
+

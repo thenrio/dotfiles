@@ -1,0 +1,3 @@
+systemis() {
+  if [ $( uname | grep -E $* ) ]; then return 0; else return 1; fi
+}
