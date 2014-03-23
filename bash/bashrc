@@ -17,10 +17,11 @@ fi
 set -o vi
 # FIXME __dirname__=`dirname $(readlink "$0")`
 __dirname__=~/src/dotfiles/me/bash
-# aliases
-. ${__dirname__}/aliases
 # sources
 for f in ${__dirname__}/sources.d/* ; do . $f; done
+
+# aliases
+. ${__dirname__}/aliases
 
 # editor
 export EDITOR='vim'
