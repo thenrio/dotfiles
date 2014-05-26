@@ -5,6 +5,6 @@ function java5 {
   export PATH=$JAVA_HOME/bin:$PATH
 }
 function java7 {
-  export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_25.jdk/Contents/Home
+  export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_55.jdk/Contents/Home
   export PATH=$JAVA_HOME/bin:$PATH
 }
