@@ -1,7 +1,6 @@
 # you can make as many tabs as you wish...
 
 name  : hack
-name   : hack
 root: .
 windows:
   - editor:
