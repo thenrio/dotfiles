@@ -1,16 +1,15 @@
-# you can make as many tabs as you wish...
-
-name  : mitm
+# has host tab
+name  : rfid
 root: .
 windows:
-  - editor:
+  - test:
       layout: main-horizontal
       panes:
         - vim .
         - 
   - repl:
        - 
-  - run:
+  - production:
        - 
   - eval:
        - 
