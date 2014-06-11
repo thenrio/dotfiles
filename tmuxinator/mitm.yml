@@ -1,0 +1,16 @@
+# you can make as many tabs as you wish...
+
+name  : mitm
+root: .
+windows:
+  - editor:
+      layout: main-horizontal
+      panes:
+        - vim .
+        - 
+  - repl:
+       - 
+  - run:
+       - 
+  - eval:
+       - 
