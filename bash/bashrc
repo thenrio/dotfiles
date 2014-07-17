@@ -19,6 +19,8 @@ set -o vi
 __dirname__=~/src/dotfiles/me/bash
 # sources
 for f in ${__dirname__}/sources.d/* ; do . $f; done
+# aliases
+. ${__dirname__}/aliases
 
 # aliases
 . ${__dirname__}/aliases
