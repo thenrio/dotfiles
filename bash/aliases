@@ -3,37 +3,5 @@ alias lt='ll -rt'
 
 alias h='history'
 
-# c
-alias cdc='cd ~/src/c'
-# dojo
-alias cdd='cd ~/src/dojo'
-# erlang
-alias cde='cd ~/src/erlang'
-# html
-alias cdh='cd ~/src/html'
-# java
-alias cdja='cd ~/src/java'
-alias clipme='eclipse >& /dev/null'
-# js
-alias cdj='cd ~/src/js'
-# python
-alias cdpy='cd ~/src/python'
-# ruby
-alias cdr='cd ~/src/ruby'
-alias cdconf='cdr; cd conference-app'
-alias cdx='cdr; cd customers/comminter/x-project'
-# dotfiles
-alias cd.='cd ~/src/dotfiles/me'
-
-# docs
-alias cdpres='cd ~/craft/presentations'
-alias cdor='cd ~/jobs/orange'
-
-# log
-alias cleanlog='rm -v *.log'
-
-# spork
-alias sporkuk='spork cucumber --port 12345'
-
 # aliases are in small files
 for f in ~/src/dotfiles/me/bash/aliases.d/* ; do . $f; done

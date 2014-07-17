@@ -30,3 +30,5 @@
 	cmd = vim -f -c \"Gdiff\" \"$MERGED\"
 [url "https://"]
 	insteadOf = git://
+[credential]
+	helper = osxkeychain

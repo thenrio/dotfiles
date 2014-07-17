@@ -1,0 +1,20 @@
+# c
+alias cdc='cd ~/src/c'
+# dojo
+alias cdd='cd ~/src/dojo'
+# erlang
+alias cde='cd ~/src/erlang'
+# go
+alias cdgo='cd ~/src/go'
+# html
+alias cdh='cd ~/src/html'
+# js
+alias cdj='cd ~/src/js'
+# python
+alias cdpy='cd ~/src/python'
+# ruby
+alias cdr='cd ~/src/ruby'
+alias cdconf='cdr; cd conference-app'
+alias cdx='cdr; cd customers/comminter/x-project'
+# dotfiles
+alias cd.='cd ~/src/dotfiles/me'

@@ -47,6 +47,7 @@ Bundle 'plasticboy/vim-markdown'
 Bundle 'lukaszb/vim-web-indent.git'
 Bundle 'juvenn/mustache.vim.git'
 Bundle 'nono/vim-handlebars'
+Bundle 'jnwhiteh/vim-golang'
 
 " art
 Bundle 'vim-scripts/DrawIt'
