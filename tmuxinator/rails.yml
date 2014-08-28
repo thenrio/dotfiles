@@ -1,9 +1,8 @@
 # you can make as many tabs as you wish...
 
-project_name  : hack
-socket_name   : hack
-project_root: .
-tabs:
+name  : hack
+root: .
+windows:
   - editor:
       layout: main-horizontal
       panes:
