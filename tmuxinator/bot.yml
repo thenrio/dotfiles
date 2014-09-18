@@ -1,5 +1,5 @@
-name: hack
-socket_name: hack
+name: bot
+socket_name: bot
 root: .
 windows:
   - editor:
@@ -7,9 +7,7 @@ windows:
       panes:
         - vim .
         - 
-  - repl:
-       - 
-  - run:
-       - 
-  - eval:
-       - 
+  - shell:
+      # layout: main-horizontal
+      # panes:
+      #   - 
