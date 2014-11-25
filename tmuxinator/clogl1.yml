@@ -1,0 +1,22 @@
+name: clog
+socket_name: clog
+root: .
+windows:
+  - jam:
+      layout: main-horizontal
+      panes:
+        - opt: 
+          - ssh frclogrfidl1
+          - cd /opt/jam
+        - log:
+          - ssh frclogrfidl1
+          - tail -f /var/log/jam/jam.log
+  - pickle:
+      layout: main-horizontal
+      panes:
+        - tk:
+          - ssh frclogrfidl1
+          - tail -f /var/log/pickle/tk.log
+        - tunnel:
+          - ssh frclogrfidl1
+          - tail -f /var/log/pickle/tunnel.log
