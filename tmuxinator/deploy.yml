@@ -1,0 +1,15 @@
+name: deploy
+socket_name: deploy
+root: ~/src/beaumanoir/deploy 
+windows:
+  - install:
+      layout: main-horizontal
+      panes:
+        - vim .
+        - workon py27
+  - repl:
+       - 
+  - run:
+       - 
+  - eval:
+       - 
