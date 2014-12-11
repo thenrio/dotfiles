@@ -2,7 +2,7 @@
 
 name  : data
 name   : data
-root: .
+root: ~/src/beaumanoir/tracks.
 windows:
   - pg:
       layout: main-horizontal
