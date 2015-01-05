@@ -1,7 +1,8 @@
 # you can make as many tabs as you wish...
 
-name  : hack
-root: .
+name  : x
+socket: x
+root: /Users/thenrio/src/ruby/customers/comminter/x-project
 windows:
   - editor:
       layout: main-horizontal

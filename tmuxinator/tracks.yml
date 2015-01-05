@@ -1,8 +1,8 @@
 # you can make as many tabs as you wish...
 
-name  : data
-name   : data
-root: ~/src/beaumanoir/tracks.
+name  : tracks
+name   : tracks
+root: ~/src/beaumanoir/tracks
 windows:
   - pg:
       layout: main-horizontal
