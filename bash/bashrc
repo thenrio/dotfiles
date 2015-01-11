@@ -16,11 +16,14 @@ fi
 
 set -o vi
 # FIXME __dirname__=`dirname $(readlink "$0")`
-__dirname__=~/src/dotfiles/me/bash
+# http://stackoverflow.com/questions/59895/can-a-bash-script-tell-what-directory-its-stored-in
+# a real mess
+#
+__dirname__=~/src/dotfiles/bash
 # sources
 for f in ${__dirname__}/sources.d/* ; do . $f; done
 # aliases
-. ${__dirname__}/aliases
+for f in ${__dirname__}/aliases.d/* ; do . $f; done
 
 # editor
 export EDITOR='vim'

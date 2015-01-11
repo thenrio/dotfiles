@@ -17,4 +17,4 @@ alias cdr='cd ~/src/ruby'
 alias cdconf='cdr; cd conference-app'
 alias cdx='cdr; cd customers/comminter/x-project'
 # dotfiles
-alias cd.='cd ~/src/dotfiles/me'
+alias cd.='cd ~/src/dotfiles'

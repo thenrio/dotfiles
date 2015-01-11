@@ -1,7 +1,0 @@
-alias ll='ls -laFG'
-alias lt='ll -rt'
-
-alias h='history'
-
-# aliases are in small files
-for f in ~/src/dotfiles/me/bash/aliases.d/* ; do . $f; done
