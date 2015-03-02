@@ -3,7 +3,10 @@
 export PATH=$PATH:$HOME/bin
 
 # https://github.com/seebi/dircolors-solarized#installation
-export TERM=xterm-256color
+# TERM=xterm-256color is defined in ~/.Xresources
+# see http://blog.sanctum.geek.nz/term-strings
+#
+eval `dircolors .dircolors`
 
 # langs ( python crash )
 # http://patrick.arminio.info/blog/2012/02/fix-valueerror-unknown-locale-utf8/

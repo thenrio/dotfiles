@@ -1,2 +1,2 @@
-alias ll='ls -laFG'
+alias ll='ls --color=auto -laFG'
 alias lt='ll -rt'

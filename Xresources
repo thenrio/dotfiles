@@ -1,0 +1,10 @@
+# see http://blog.sanctum.geek.nz/term-strings/
+#
+# look for supported terms in 
+# 
+# see /etc/terminfo/README
+# see infocmp
+# 
+#   infocmp xterm-256color
+# 
+XTerm*termName: xterm-256color
