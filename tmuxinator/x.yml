@@ -2,7 +2,7 @@
 
 name  : x
 socket: x
-root: /Users/thenrio/src/ruby/customers/comminter/x-project
+root: /home/thenrio/src/comminter/x-project
 windows:
   - editor:
       layout: main-horizontal
