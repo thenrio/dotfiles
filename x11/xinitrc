@@ -1,0 +1,5 @@
+! funk it
+!
+xmodmap -e "keycode 112 = Page_Up"
+xmodmap -e "keycode 117 = Page_Down"
+
