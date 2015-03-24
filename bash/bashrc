@@ -39,11 +39,6 @@ export EDITOR='vim'
 export PATH="$PATH:$HOME/.rbenv/bin"
 eval "$(rbenv init -)"
 
-# bash completion on osx is broken!
-if [  $( command -v brew ) ]  && [ -f `brew --prefix`/etc/bash_completion ]; then
-  . `brew --prefix`/etc/bash_completion
-fi
-
 # vagrant
 # export VAGRANT_LOG=INFO
 
