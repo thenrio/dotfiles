@@ -1,2 +1,4 @@
 # vi : set ft=bash
-eval "$(grunt --completion=bash)"
+if [  $( command -v grunt ) ];  then
+  eval "$(grunt --completion=bash)"
+fi
