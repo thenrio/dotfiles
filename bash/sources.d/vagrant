@@ -1,3 +1,5 @@
 # -*- mode: bash -*-
 # vi: set ft=sh :
-export PATH=/Applications/Vagrant/bin:$PATH
+if systemis darwin; then
+  export PATH=/Applications/Vagrant/bin:$PATH
+fi
