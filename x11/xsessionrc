@@ -1,0 +1,4 @@
+# lightdm does not source /etc/profile
+# https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=636108
+#
+. /etc/profile
