@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# 
+set -e
+
+settings="$1"
+f="$HOME/.networks.d/$settings" 
+if [ ! -e $f ]; then
+  echo "no such network: $settings ( put a file $f )"
+  exit 1
+fi
+
+exec $f
