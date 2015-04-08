@@ -38,7 +38,6 @@ Plugin 'airblade/vim-gitgutter'
 
 " langages
 Plugin 'vim-ruby/vim-ruby'
-Plugin 'klen/python-mode'
 Plugin 'ecomba/vim-ruby-refactoring'
 Plugin 'tpope/vim-rails'
 Plugin 'pangloss/vim-javascript'
@@ -48,6 +47,7 @@ Plugin 'lukaszb/vim-web-indent.git'
 Plugin 'juvenn/mustache.vim.git'
 Plugin 'nono/vim-handlebars'
 Plugin 'jnwhiteh/vim-golang'
+Plugin 'fatih/vim-go'
 
 " art
 Plugin 'vim-scripts/DrawIt'
