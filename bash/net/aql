@@ -3,7 +3,9 @@
 proxy=http://SNNN7355:\*3mzFT7YFA@192.168.194.40:3128
 ftp_proxy=http://vis:visiteur@spike.aql.fr:3128 \
 http_proxy=${proxy} \
+HTTP_PROXY=${proxy} \
 https_proxy=${proxy} \
+HTTPS_PROXY=${proxy} \
 ALL_PROXY=${proxy} \
 GIT_PROXY_COMMAND=/Users/thenrio/src/bash/gitproxy/gitproxy \
 $@
