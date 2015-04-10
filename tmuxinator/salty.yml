@@ -1,0 +1,11 @@
+name: salty
+socket_name: salty
+root: .
+windows:
+  - central:
+      layout: main-horizontal
+      panes:
+        - head: 
+          - ssh salty
+        - tail:
+          - ssh salty
