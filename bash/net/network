@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# 
+#
 set -e
 
 settings="$1"
-f="$HOME/.networks.d/$settings" 
+f="$HOME/.network.d/$settings"
 if [ ! -x $f ]; then
   echo "no such executable network: $settings ( check file $f )"
   exit 1

@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-scselect $1
-if [ -f ~/.networks/$1 ]; then 
-  . ~/.networks/$1
-fi
