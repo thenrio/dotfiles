@@ -1,11 +1,11 @@
-name: salty
-socket_name: salty
+name: ci
+socket_name: ci
 root: .
 windows:
-  - salty:
+  - ci:
       layout: main-horizontal
       panes:
         - head: 
-          - ssh salty
+          - ssh ci
         - tail:
-          - ssh salty
+          - ssh ci
