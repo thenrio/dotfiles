@@ -36,7 +36,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 
-" langages
+" langages/syntax
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'ecomba/vim-ruby-refactoring'
 Plugin 'tpope/vim-rails'
@@ -48,6 +48,7 @@ Plugin 'juvenn/mustache.vim.git'
 Plugin 'nono/vim-handlebars'
 Plugin 'jnwhiteh/vim-golang'
 Plugin 'fatih/vim-go'
+Plugin 'Matt-Deacalion/vim-systemd-syntax'
 
 " art
 Plugin 'vim-scripts/DrawIt'
