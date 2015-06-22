@@ -20,9 +20,11 @@
 ! not sure yet :)
 !
 
-URxvt.intensityStyles: false
-URxvt.geometry: 74x27
-URxvt.transparent: true
+URxvt.geometry:         74x27
+URxvt.intensityStyles:  false
+/* URxvt.perl-ext-common:  fullscreen */
+URxvt.transparent:      true
 
 #include ".Xresources.d/fonts"
 #include ".Xresources.d/colors"
+#include ".Xresources.d/keysym"
