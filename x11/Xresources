@@ -7,4 +7,19 @@
 !
 !   infocmp xterm-256color
 !
-XTerm*termName: xterm-256color
+! also see
+!
+! * https://wiki.archlinux.org/index.php/Rxvt-unicode
+! * http://510x.se/notes/posts/Configuring_and_using_rxvt-unicode/
+! * http://karma-lab.net/installer-et-parametrer-urxvt
+! * http://unix.stackexchange.com/questions/196488/set-urxvt-to-work-with-256-colors
+!
+! could break monolith ~/.Xresources with includes!
+! not sure yet :)
+!
+
+URxvt.boldFont: xft:DejaVu Sans Mono:size=10
+URxvt.intensityStyles: false
+URxvt.font:     xft:DejaVu Sans Mono:size=10
+URxvt.geometry: 74x27
+URxvt.transparent: true
