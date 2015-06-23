@@ -1,2 +1,3 @@
-URxvt.boldFont: xft:DejaVu Sans Mono:size=10
-URxvt.font:     xft:DejaVu Sans Mono:size=10
+URxvt.boldFont:     xft:DejaVu Sans Mono:size=10
+URxvt.font:         xft:DejaVu Sans Mono:size=10
+URxvt.letterSpace:  -1
