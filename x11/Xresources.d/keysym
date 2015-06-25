@@ -1,1 +1,3 @@
-Rxvt.keysym.F11:       perl:fullscreen:switch
+Rxvt.keysym.F11:              perl:fullscreen:switch
+Rxvt.keysym.Shift-Control-C:  perl:clipboard:copy
+Rxvt.keysym.Shift-Control-V:  perl:clipboard:paste
