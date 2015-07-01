@@ -1,0 +1,14 @@
+# enable
+#   systemctl --user enable urxvtd.service
+#
+[Unit]
+Description=urxvt terminal daemon
+Documentation=man:urxvtd(1) man:urxvt(1)
+Requires=urxvtd.socket
+
+[Service]
+ExecStart=/usr/bin/urxvtd -o -q
+Environment=RXVT_SOCKET=%t/urxvtd-%H
+
+[Install]
+WantedBy=graphical.target

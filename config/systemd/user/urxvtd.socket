@@ -1,0 +1,10 @@
+# enable
+#   systemctl --user enable urxvtd.socket
+[Unit]
+Description=urxvt daemon socket
+
+[Socket]
+ListenStream=%t/urxvtd-%H
+
+[Install]
+WantedBy=sockets.target
