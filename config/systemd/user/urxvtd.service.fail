@@ -1,6 +1,12 @@
 # enable
 #   systemctl --user enable urxvtd.service
 #
+# what does not work
+#
+# - perl extensions ( F11 => fullscreen )
+#
+# then pretty much useless!!!
+#
 [Unit]
 Description=urxvt terminal daemon
 Documentation=man:urxvtd(1) man:urxvt(1)
@@ -9,4 +15,4 @@ Documentation=man:urxvtd(1) man:urxvt(1)
 ExecStart=/usr/bin/urxvtd -o -q
 
 [Install]
-WantedBy=graphical.target
+WantedBy=default.target
