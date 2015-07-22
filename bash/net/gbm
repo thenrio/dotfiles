@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
-proxy=http://proxy.grp-beaumanoir.fr:8080
+proxy=http://proxyweb.grp-beaumanoir.fr:8080
 http_proxy=${proxy} \
 https_proxy=${proxy} \
+HTTP_PROXY=${proxy} \
+HTTPS_PROXY=${proxy} \
 ALL_PROXY=${proxy} \
 GIT_PROXY_COMMAND=/Users/thenrio/src/bash/gitproxy/gitproxy \
 $@
