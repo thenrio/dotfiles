@@ -4,10 +4,15 @@ name  : tracks
 name   : tracks
 root: ~/src/beaumanoir/tracks
 windows:
+  - editor:
+      layout: main-horizontal
+      panes:
+        - vim .
+        - 
   - pg:
       layout: main-horizontal
       panes:
-        - ll
+        -
         - 
   - sqlite3:
       -
@@ -18,5 +23,3 @@ windows:
         - 
   - eval:
       -
-  - editor:
-      - vim .

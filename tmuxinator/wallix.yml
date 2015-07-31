@@ -1,0 +1,9 @@
+name: wallix
+socket_name: wallix
+root: .
+windows:
+  - inspect:
+      layout: main-horizontal
+      panes:
+        - ssh wallix
+        - ssh wallix 
