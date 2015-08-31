@@ -1,0 +1,13 @@
+name: docker
+socket_name: docker
+root: .
+windows:
+  - editor:
+      layout: main-horizontal
+      panes:
+        - 
+        - 
+  - shell:
+      # layout: main-horizontal
+      # panes:
+      #   - 
