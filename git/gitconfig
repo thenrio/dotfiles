@@ -26,6 +26,7 @@
 	enabled = 1
 [push]
 	default = upstream
+	followTags = true
 [mergetool "fugitive"]
 	cmd = vim -f -c \"Gvdiff\" \"$MERGED\"
 [url "https://"]
