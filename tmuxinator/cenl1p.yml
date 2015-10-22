@@ -1,0 +1,13 @@
+name: cenl1p
+socket_name: cenl1p
+root: .
+windows:
+  - central:
+      layout: main-horizontal
+      panes:
+        - log: 
+          - ssh frgbmrfidcenl1p
+          - cd /var/log/central
+        - hive:
+          - ssh frgbmrfidcenl1p
+          - sudo -u postgres psql hive
