@@ -1,0 +1,13 @@
+name: epcl1
+socket_name: epcl1
+root: .
+windows:
+  - central:
+      layout: main-horizontal
+      panes:
+        - log: 
+          - ssh frgbmrfidepcl1
+          - cd /var/log/clones
+        - hive:
+          - ssh frgbmrfidepcl1
+          - sudo -u postgres psql anthill
