@@ -1,0 +1,25 @@
+name: clogl2p
+socket_name: clogl2p
+root: .
+windows:
+  - jam:
+      layout: main-horizontal
+      panes:
+        - opt: 
+          - ssh frclogrfidl2p
+          - cd /opt/jam
+        - log:
+          - ssh frclogrfidl2p
+          - cd /var/log/jam
+          - tail -f jam.log
+  - pickle:
+      layout: main-horizontal
+      panes:
+        - tk:
+          - ssh frclogrfidl2p
+          - cd /var/log/pickle
+          - tail -f tk.log
+        - tunnel:
+          - ssh frclogrfidl2p
+          - cd /var/log/pickle
+          - tail -f tunnel.log
