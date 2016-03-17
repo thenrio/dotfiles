@@ -1,0 +1,11 @@
+name: msbl1
+socket_name: msbl1
+root: .
+windows:
+  - bot:
+      layout: main-horizontal
+      panes:
+        - press: 
+          - ssh frclogrfidmsbl1
+        - log:
+          - ssh frclogrfidmsbl1

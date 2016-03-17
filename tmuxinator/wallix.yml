@@ -5,5 +5,8 @@ windows:
   - inspect:
       layout: main-horizontal
       panes:
-        - ssh wallix
-        - ssh wallix 
+        - etc:
+          - cd /etc
+          - sudo mv resolv.conf.ovpn.bak resolv.conf
+        - ssh:
+          - ssh wallix
