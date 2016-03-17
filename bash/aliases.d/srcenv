@@ -4,6 +4,8 @@ alias cdc='cd ~/src/c'
 alias cdd='cd ~/src/dojo'
 # erlang
 alias cde='cd ~/src/erlang'
+# elixir
+alias cdex='cd ~/src/elixir'
 # go src is so ... haha
 alias cdgo="cd $GOPATH/src"
 # html
@@ -14,7 +16,6 @@ alias cdj='cd ~/src/js'
 alias cdpy='cd ~/src/python'
 # ruby
 alias cdr='cd ~/src/ruby'
-alias cdconf='cdr; cd conference-app'
-alias cdx='cdr; cd customers/comminter/x-project'
+alias cdcom='cdr; cd customers/comminter/x-project'
 # dotfiles
 alias cd.='cd ~/src/dotfiles'
