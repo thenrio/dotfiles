@@ -10,7 +10,9 @@
 ## OH!!!!
 node_modules
 
+# erlang
 .eunit
+*.beam
 
 #
 .byebug_history

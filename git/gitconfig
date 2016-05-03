@@ -6,6 +6,7 @@
 [user]
 	name = thierry
 	email = thierry.henrio@gmail.com
+	signingkey = F9B342F0
 [github]
 	user = thierryhenrio
 [merge]
