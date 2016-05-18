@@ -1,0 +1,15 @@
+name: post
+socket_name: post
+root: ~/src/elixir/postgrex
+windows:
+  - editor:
+      layout: main-horizontal
+      panes:
+        - vim .
+        - 
+  - repl:
+       - 
+  - run:
+       - 
+  - eval:
+       - 
