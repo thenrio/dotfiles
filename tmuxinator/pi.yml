@@ -1,0 +1,11 @@
+name: pi
+socket_name: pi
+root: .
+windows:
+  - pi:
+      layout: main-horizontal
+      panes:
+        -
+          ssh pi.beaumanoir.press
+        -
+          ssh pi.beaumanoir.press
