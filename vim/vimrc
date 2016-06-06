@@ -158,6 +158,26 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 function! StripWhitespace()
   exec ':%s/ \+$//'
 endfunction
+
+function! s:maybe_replace( something, else )
+  try
+    execute ':% s/' . a:something . '/' . a:else . '/g'
+  catch /^Vim\%((\a\+)\)\=:E486/
+  endtry
+endfunction
+
+function! s:surrounding_craze( char, replacement )
+  for c in [ '(', '\[', '{' ]
+    call s:maybe_replace( c . a:char, c . a:replacement )
+  endfor
+  for c in [ ')', ']', '}' ]
+    call s:maybe_replace( a:char . c, a:replacement . c )
+  endfor
+endfunction
+
+function! SpaceCrazeLess()
+  call s:surrounding_craze( ' ', '' )
+endfunction
 " }}}
 
 nmap <leader>s :call StripWhitespace()<CR>:w<CR>
