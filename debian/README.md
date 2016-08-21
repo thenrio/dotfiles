@@ -66,7 +66,6 @@ iceweasel
 ---------
 layout.css.devPixelsPerPx => 2
 
-
 chromium
 --------
 chromium --force-device-scale-factor=1.6 2>/dev/null
