@@ -1,7 +1,5 @@
-# you can make as many tabs as you wish...
-
 name  : tracks
-name   : tracks
+socket_name: tracks
 root: ~/src/beaumanoir/tracks
 windows:
   - editor:
