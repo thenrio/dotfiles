@@ -1,5 +1,0 @@
-
-# vi : set ft=bash
-if [  $( command -v brew ) ]  && [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
-fi
