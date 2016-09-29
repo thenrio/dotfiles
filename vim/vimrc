@@ -33,17 +33,17 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
 " langages/syntax
-Plug 'Matt-Deacalion/vim-systemd-syntax'
-Plug 'elixir-lang/vim-elixir'
-Plug 'fatih/vim-go'
-Plug 'jnwhiteh/vim-golang'
-Plug 'lambdatoast/elm.vim'
-Plug 'pangloss/vim-javascript'
-Plug 'plasticboy/vim-markdown'
-Plug 'tpope/vim-rails'
-Plug 'vim-ruby/vim-ruby'
-Plug 'vim-scripts/bats.vim'
-Plug 'vim-scripts/vim-coffee-script'
+Plug 'Matt-Deacalion/vim-systemd-syntax', { 'for': 'sh' }
+Plug 'elixir-lang/vim-elixir',            { 'for': 'elixir' }
+Plug 'fatih/vim-go',                      { 'for': 'go' }
+Plug 'jnwhiteh/vim-golang',               { 'for': 'go' }
+Plug 'lambdatoast/elm.vim',               { 'for': 'elm' }
+Plug 'pangloss/vim-javascript',           { 'for': 'javascript' }
+Plug 'plasticboy/vim-markdown',           { 'for': 'markdown' }
+Plug 'tpope/vim-rails',                   { 'for': 'ruby' }
+Plug 'vim-ruby/vim-ruby',                 { 'for': 'ruby' }
+Plug 'vim-scripts/bats.vim',              { 'for': 'sh' }
+Plug 'vim-scripts/vim-coffee-script',     { 'for': 'coffeescript' }
 
 " art
 Plug 'vim-scripts/DrawIt'
