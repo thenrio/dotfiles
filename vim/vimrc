@@ -1,71 +1,61 @@
 set nocompatible                " choose no compatibility with legacy vi
-filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" vundle {{{
-" vim +BundleInstall +qall
-Plugin 'gmarik/Vundle.vim'
+call plug#begin('~/.vim/plugged')
+" plug {{{
+" see https://github.com/junegunn/vim-plug/wiki/faq
 
 " color
-Plugin 'altercation/vim-colors-solarized'
+Plug 'altercation/vim-colors-solarized'
 
 " snippets
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'honza/vim-snippets'
-Plugin 'garbas/vim-snipmate'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'honza/vim-snippets'
+Plug 'garbas/vim-snipmate'
 
 " fuzzy finder
-Plugin 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 
 " edit
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-repeat'
-Plugin 'tpope/vim-endwise'
-Plugin 'edsono/vim-matchit'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-endwise'
+Plug 'edsono/vim-matchit'
 
 " command
-Plugin 'tpope/vim-unimpaired'
+Plug 'tpope/vim-unimpaired'
 
 " code
-Plugin 'tpope/vim-commentary'
+Plug 'tpope/vim-commentary'
 
 " git
-Plugin 'tpope/vim-fugitive'
-Plugin 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
 " langages/syntax
-Plugin 'Matt-Deacalion/vim-systemd-syntax'
-Plugin 'ecomba/vim-ruby-refactoring'
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'fatih/vim-go'
-Plugin 'jnwhiteh/vim-golang'
-Plugin 'juvenn/mustache.vim.git'
-Plugin 'lambdatoast/elm.vim'
-Plugin 'lukaszb/vim-web-indent.git'
-Plugin 'nono/vim-handlebars'
-Plugin 'pangloss/vim-javascript'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'tpope/vim-rails'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'vim-scripts/bats.vim'
-Plugin 'vim-scripts/vim-coffee-script'
+Plug 'Matt-Deacalion/vim-systemd-syntax'
+Plug 'elixir-lang/vim-elixir'
+Plug 'fatih/vim-go'
+Plug 'jnwhiteh/vim-golang'
+Plug 'lambdatoast/elm.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'plasticboy/vim-markdown'
+Plug 'tpope/vim-rails'
+Plug 'vim-ruby/vim-ruby'
+Plug 'vim-scripts/bats.vim'
+Plug 'vim-scripts/vim-coffee-script'
 
 " art
-Plugin 'vim-scripts/DrawIt'
+Plug 'vim-scripts/DrawIt'
 
 " end of plugins
-call vundle#end()
+call plug#end()
 " }}}
 "
 
 " http://mislav.uniqpath.com/2011/12/vim-revisited/
 " http://nvie.com/posts/how-i-boosted-my-vim/
-syntax enable
 set showcmd                     " display incomplete commands
-filetype plugin indent on       " load file type plugins + indentation
 
 " color
 set background=dark
