@@ -37,7 +37,7 @@ Plug 'Matt-Deacalion/vim-systemd-syntax', { 'for': 'sh' }
 Plug 'elixir-lang/vim-elixir',            { 'for': 'elixir' }
 Plug 'fatih/vim-go',                      { 'for': 'go' }
 Plug 'jnwhiteh/vim-golang',               { 'for': 'go' }
-Plug 'lambdatoast/elm.vim',               { 'for': 'elm' }
+Plug 'elmcast/elm-vim',                   { 'for': 'elm' }
 Plug 'pangloss/vim-javascript',           { 'for': 'javascript' }
 Plug 'plasticboy/vim-markdown',           { 'for': 'markdown' }
 Plug 'tpope/vim-rails',                   { 'for': 'ruby' }
