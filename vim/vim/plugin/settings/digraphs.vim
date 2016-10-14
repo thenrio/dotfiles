@@ -9,7 +9,8 @@
 	execute "digraphs es " . 0x2091
 	execute "digraphs hs " . 0x2095
 	execute "digraphs is " . 0x1D62
-	execute "digraphs ks " . 0x2096 
+	execute "digraphs js " . 0x2C7C
+	execute "digraphs ks " . 0x2096
 	execute "digraphs ls " . 0x2097
 	execute "digraphs ms " . 0x2098
 	execute "digraphs ns " . 0x2099
