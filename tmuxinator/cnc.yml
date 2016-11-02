@@ -1,11 +1,11 @@
-name: salty
-socket_name: salty
+name: cnc
+socket_name: cnc
 root: .
 windows:
-  - salty:
+  - cnc:
       layout: main-horizontal
       panes:
         - head: 
-          - ssh salty
+          - ssh cnc
         - tail:
-          - ssh salty
+          - ssh cnc
