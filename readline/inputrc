@@ -6,3 +6,4 @@ control-n: history-search-forward
 control-l: clear-screen
 "\e[3~": delete-char
 
+set bell-style none
