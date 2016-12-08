@@ -6,6 +6,10 @@ alias cdd='cd ~/src/dojo'
 alias cde='cd ~/src/erlang'
 # elixir
 alias cdex='cd ~/src/elixir'
+# elm
+alias cdelm='cd ~/src/elm'
+# java
+alias cdja='cd ~/src/java'
 # go src is so ... haha
 alias cdgo="cd $GOPATH/src"
 # html
