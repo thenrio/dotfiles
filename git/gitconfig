@@ -4,11 +4,11 @@
 	interactive = auto
 	status = auto
 [user]
-	name = thierry
+	name = thenrio
 	email = thierry.henrio@gmail.com
 	signingkey = F9B342F0
 [github]
-	user = thierryhenrio
+	user = thenrio
 [merge]
 	conflictstyle = diff3	
 	tool = fugitive
