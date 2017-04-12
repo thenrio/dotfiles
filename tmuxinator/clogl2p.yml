@@ -2,16 +2,16 @@ name: clogl2p
 socket_name: clogl2p
 root: .
 windows:
-  - jam:
+  - plug:
       layout: main-horizontal
       panes:
         - opt: 
           - ssh frclogrfidl2p
-          - cd /opt/jam
+          - cd /opt/plug
         - log:
           - ssh frclogrfidl2p
-          - cd /var/log/jam
-          - tail -f jam.log
+          - cd /var/log/plug
+          - tail -f plug.log
   - pickle:
       layout: main-horizontal
       panes:

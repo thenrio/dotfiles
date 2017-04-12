@@ -7,11 +7,11 @@ windows:
       panes:
         - opt: 
           - ssh frclogrfidl1p
-          - cd /opt/jam
+          - cd /opt/plug
         - log:
           - ssh frclogrfidl1p
-          - cd /var/log/jam
-          - tail -f jam.log
+          - cd /var/log/plug
+          - tail -f plug.log
   - pickle:
       layout: main-horizontal
       panes:
