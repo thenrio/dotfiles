@@ -7,7 +7,7 @@ export PATH=$PATH:$HOME/bin
 # see http://blog.sanctum.geek.nz/term-strings
 #
 # would better have a bashrc that looks like debian skeleton
-eval `dircolors $HOME/.dircolors`
+eval "$(dircolors $HOME/.dircolors)"
 
 # langs ( python crash )
 # http://patrick.arminio.info/blog/2012/02/fix-valueerror-unknown-locale-utf8/
@@ -33,11 +33,8 @@ for f in ${__dirname__}/sources.d/* ; do . $f; done
 for f in ${__dirname__}/aliases.d/* ; do . $f; done
 
 # editor
-export EDITOR='vim'
+export EDITOR="vim"
 
 # rbenv
 export PATH="$PATH:$HOME/.rbenv/bin"
 eval "$(rbenv init -)"
-
-# vagrant
-# export VAGRANT_LOG=INFO
