@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# vim: set ft=sh :
+set -o errexit
+set -o pipefail
+
+dir=$1
+cd $dir 
+name=$(basename $dir)
+urxvtcd -title $name -e mux hack $name

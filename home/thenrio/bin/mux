@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# last positional parameter
+socket=${!#}
+if pgrep -af "^tmux -L $socket" >/dev/null; then
+  tmux -L $socket -u attach -t $socket
+else
+  TERM=xterm-256color tmuxinator start $*
+fi
