@@ -40,11 +40,8 @@ else
   cmd="$template $name"
 fi
 
-err=$(mktemp)
-if urxvtcd -title $name -e mux $cmd 2>$err; then
-  echo "ok mux $cmd"
-else
-  echo "ko mux $cmd"
-  cat $err 1>&2
-fi
-rm $err
+# alas, rxvt exit code does not reflect its command...
+# rxvt -e false; echo $? => 0
+# any error handling is bound to fail...
+urxvtcd -title $name -e mux $cmd
+echo "ok mux $cmd"
