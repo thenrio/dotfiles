@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 # last positional parameter
+set -o errexit
+
 socket=${!#}
 if pgrep -af "^tmux -L $socket" >/dev/null; then
   tmux -L $socket -u attach -t $socket

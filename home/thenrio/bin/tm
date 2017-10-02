@@ -3,7 +3,48 @@
 set -o errexit
 set -o pipefail
 
-dir=$1
-cd $dir 
-name=$(basename $dir)
-urxvtcd -title $name -e mux hack $name
+TEMPLATE=${TEMPLATE:-"hack"}
+
+usage() {
+  cat <<EOF
+$0 opens a new terminal and execs a mux command.
+has forms
+
+$0 template dir
+   cd to dir, mux template dir
+
+$0 template arg
+   mux template arg
+
+$0 dir
+   cd to dir, mux $TEMPLATE dir
+
+$0 arg
+   mux dir
+EOF
+}
+
+if (($# > 2)); then usage && exit 1; fi
+if (($# == 2)); then
+  template=$1
+  dir=$2
+else
+  dir=$1
+fi
+
+name=$(basename $dir | sed 's/\./\+/g')
+cmd=$name
+if cd $dir 2>/dev/null; then
+  cmd="${template:-$TEMPLATE} $name"
+else
+  cmd="$template $name"
+fi
+
+err=$(mktemp)
+if urxvtcd -title $name -e mux $cmd 2>$err; then
+  echo "ok mux $cmd"
+else
+  echo "ko mux $cmd"
+  cat $err 1>&2
+fi
+rm $err
