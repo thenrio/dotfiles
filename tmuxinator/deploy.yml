@@ -6,7 +6,7 @@ windows:
       layout: main-horizontal
       panes:
         - vim .
-        - workon py27
+        - workon deploy
   - repl:
        - 
   - run:
