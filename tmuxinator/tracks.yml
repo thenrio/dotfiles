@@ -5,7 +5,7 @@ windows:
   - editor:
       layout: main-horizontal
       panes:
-        - vim .
+        -
         - 
   - pg:
       layout: main-horizontal
@@ -19,5 +19,3 @@ windows:
       panes:
         - 
         - 
-  - eval:
-      -
