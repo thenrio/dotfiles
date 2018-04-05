@@ -1,7 +1,7 @@
-# enabled with 
+# enabled with
 #
 # systemctl enable /home/thenrio/src/dotfiles/etc/systemd/system/disable-gpe66.service
-# 
+#
 [Unit]
 Description=disabled gpe66
 

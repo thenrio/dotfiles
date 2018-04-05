@@ -1,0 +1,14 @@
+# enabled with
+#
+# systemctl enable /home/thenrio/src/dotfiles/etc/systemd/system/disable-gpe4E.service
+#
+[Unit]
+Description=disabled gpe4E
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/sh -c 'echo disable > /sys/firmware/acpi/interrupts/gpe4E'
+
+[Install]
+WantedBy=multi-user.target
