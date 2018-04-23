@@ -1,5 +1,4 @@
 name: msbl1
-socket_name: msbl1
 root: .
 windows:
   - bot:

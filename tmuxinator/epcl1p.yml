@@ -1,5 +1,4 @@
 name: epcl1p
-socket_name: epcl1p
 root: .
 windows:
   - clones:

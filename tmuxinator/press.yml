@@ -1,5 +1,4 @@
 name: press
-socket_name: press
 root: /home/thenrio/src/beaumanoir/press
 windows:
   - editor:

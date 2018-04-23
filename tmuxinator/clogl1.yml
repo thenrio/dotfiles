@@ -1,5 +1,4 @@
 name: clogl1
-socket_name: clogl1
 root: .
 windows:
   - jam:

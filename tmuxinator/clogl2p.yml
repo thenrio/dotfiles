@@ -1,5 +1,4 @@
 name: clogl2p
-socket_name: clogl2p
 root: .
 windows:
   - plug:

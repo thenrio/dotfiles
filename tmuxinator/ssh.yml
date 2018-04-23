@@ -1,5 +1,4 @@
 name: <%= @args[0] %>
-socket_name: <%= @args[0] %>
 root: .
 windows:
   - sh:

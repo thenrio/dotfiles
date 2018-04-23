@@ -1,5 +1,4 @@
 name: cenl1
-socket_name: cenl1
 root: .
 windows:
   - central:

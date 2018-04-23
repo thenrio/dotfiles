@@ -1,5 +1,4 @@
 name: deploy
-socket_name: deploy
 root: ~/src/beaumanoir/deploy 
 windows:
   - install:

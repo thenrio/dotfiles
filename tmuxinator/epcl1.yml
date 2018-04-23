@@ -1,5 +1,4 @@
 name: epcl1
-socket_name: epcl1
 root: .
 windows:
   - central:

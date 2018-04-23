@@ -1,5 +1,4 @@
 name: pi
-socket_name: pi
 root: .
 windows:
   - pi:

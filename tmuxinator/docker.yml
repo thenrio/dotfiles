@@ -1,5 +1,4 @@
 name: docker
-socket_name: docker
 root: .
 windows:
   - editor:

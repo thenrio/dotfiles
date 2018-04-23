@@ -1,5 +1,4 @@
 name  : tracks
-socket_name: tracks
 root: ~/src/beaumanoir/tracks
 windows:
   - editor:

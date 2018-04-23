@@ -1,5 +1,4 @@
 name: cnc
-socket_name: cnc
 root: .
 windows:
   - cnc:

@@ -1,5 +1,4 @@
 name: ci
-socket_name: ci
 root: .
 windows:
   - ci:
