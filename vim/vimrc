@@ -14,13 +14,13 @@ Plug 'honza/vim-snippets'
 Plug 'garbas/vim-snipmate'
 
 " fuzzy finder
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 " edit
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-endwise'
-Plug 'edsono/vim-matchit'
 
 " command
 Plug 'tpope/vim-unimpaired'
@@ -35,17 +35,19 @@ Plug 'airblade/vim-gitgutter'
 " langages/syntax
 Plug 'Matt-Deacalion/vim-systemd-syntax', { 'for': 'sh' }
 Plug 'elixir-lang/vim-elixir',            { 'for': 'elixir' }
+Plug 'elmcast/elm-vim',                   { 'for': 'elm' }
 Plug 'fatih/vim-go',                      { 'for': 'go' }
 Plug 'jnwhiteh/vim-golang',               { 'for': 'go' }
-Plug 'elmcast/elm-vim',                   { 'for': 'elm' }
 Plug 'pangloss/vim-javascript',           { 'for': 'javascript' }
 Plug 'plasticboy/vim-markdown',           { 'for': 'markdown' }
+Plug 'posva/vim-vue'
+Plug 'rust-lang/rust.vim'
 Plug 'tpope/vim-rails',                   { 'for': 'ruby' }
 Plug 'vim-ruby/vim-ruby',                 { 'for': 'ruby' }
 Plug 'vim-scripts/bats.vim',              { 'for': 'sh' }
-Plug 'vim-scripts/vim-coffee-script',     { 'for': 'coffeescript' }
 
 " art
+Plug 'godlygeek/tabular'
 Plug 'vim-scripts/DrawIt'
 
 " end of plugins
