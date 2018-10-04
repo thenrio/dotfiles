@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+# vim: set ft=sh :
+set -o errexit
+set -o pipefail
+
+TEMPLATE=${TEMPLATE:-"hack"}
+
+usage() {
+  cat <<EOF
+$0 command args
+   --help
+
+opens a new terminal and execs a mux command.
+
+has forms
+
+$0 template dir
+   cd to dir, mux template dir
+
+$0 template arg
+   mux template arg
+
+$0 dir when dir exists
+   cd to dir, mux $TEMPLATE dir
+
+$0 arg
+   mux arg
+EOF
+}
+
+if (($# > 2)); then usage && exit 1; fi
+if (($# == 2)); then
+  template=$1
+  dir=$2
+else
+  case $1 in
+    --help)
+      usage && exit 0
+      ;;
+    *)
+      dir=$1
+      ;;
+  esac
+fi
+
+name=$(basename $dir | sed 's/\./\+/g')
+cmd=$name
+if cd $dir 2>/dev/null; then
+  cmd="${template:-$TEMPLATE} $name"
+else
+  cmd="$template $name"
+fi
+
+# alas, rxvt exit code does not reflect its command...
+# rxvt -e false; echo $? => 0
+# any error handling is bound to fail...
+urxvtcd -n urxvt -title $name -e mux $cmd
+echo "ok mux $cmd"

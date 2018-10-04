@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+set -o errexit
+set -o pipefail
+
+usage() {
+  cat <<EOF
+$0
+  --help 
+
+prune detached sessions
+EOF
+}
+case $1 in
+  --help)
+    usage && exit 0
+    ;;
+esac
+
+for t in $(tmux ls | grep -v attached | cut -d: -f1)
+  do echo "kill $t"
+  tmux kill-session -t $t
+done

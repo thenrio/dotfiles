@@ -3,45 +3,20 @@
 set -o errexit
 set -o pipefail
 
-TEMPLATE=${TEMPLATE:-"hack"}
-
 usage() {
-  cat <<EOF
-$0 opens a new terminal and execs a mux command.
-has forms
-
-$0 template dir
-   cd to dir, mux template dir
-
-$0 template arg
-   mux template arg
-
-$0 dir
-   cd to dir, mux $TEMPLATE dir
-
-$0 arg
-   mux dir
-EOF
+  commands=(prune run)
+  for command in ${commands[*]}; do
+    tm-$command --help
+  done
 }
 
-if (($# > 2)); then usage && exit 1; fi
-if (($# == 2)); then
-  template=$1
-  dir=$2
-else
-  dir=$1
-fi
-
-name=$(basename $dir | sed 's/\./\+/g')
-cmd=$name
-if cd $dir 2>/dev/null; then
-  cmd="${template:-$TEMPLATE} $name"
-else
-  cmd="$template $name"
-fi
-
-# alas, rxvt exit code does not reflect its command...
-# rxvt -e false; echo $? => 0
-# any error handling is bound to fail...
-urxvtcd -n urxvt -title $name -e mux $cmd
-echo "ok mux $cmd"
+command="$1"
+case $command in
+  --help)
+    usage && exit 0
+    ;;
+  *)
+    shift
+    tm-$command "$@"
+    ;;
+esac
