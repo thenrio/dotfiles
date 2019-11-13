@@ -6,7 +6,7 @@
 [user]
 	name = thenrio
 	email = thierry.henrio@gmail.com
-	signingkey = F9B342F0
+	signingkey = 0283188174C66EB7A43302DD449505A931052A66
 [github]
 	user = thenrio
 [merge]
@@ -17,12 +17,12 @@
 [branch]
 	autosetuprebase = always
 [alias]
-  ci = commit
-  l  = log --pretty=oneline --abbrev-commit
-	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-  st = status -sb
-  edit-conflict = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; vim `f`"
   add-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; git add `f`"
+  ci = commit
+  edit-conflict = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; vim `f`"
+  l  = log --pretty=oneline --abbrev-commit
+	lg = log --graph --pretty=format:'%Cred%h%Creset - %Cgreen%cd%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset' --abbrev-commit --date=iso
+  st = status -sb
 [rerere]
 	enabled = 1
 [push]
