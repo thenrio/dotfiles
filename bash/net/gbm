@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-PROXY=${PROXY:-"http://proxyweb.grp-beaumanoir.fr:8080"}
+PROXY=${PROXY:-"http://localhost:3128"}
 http_proxy=${PROXY} \
 https_proxy=${PROXY} \
 HTTP_PROXY=${PROXY} \
