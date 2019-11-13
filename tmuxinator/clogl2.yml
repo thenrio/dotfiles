@@ -1,16 +1,14 @@
 name: clogl2
 root: .
 windows:
-  - jam:
+  - plug:
       layout: main-horizontal
       panes:
-        - opt: 
+        - log: 
           - ssh frclogrfidl2
-          - cd /opt/jam
         - log:
           - ssh frclogrfidl2
-          - cd /var/log/jam
-          - tail -f jam.log
+          - cd /var/log/plug
   - pickle:
       layout: main-horizontal
       panes:
