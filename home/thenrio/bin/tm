@@ -3,20 +3,40 @@
 set -o errexit
 set -o pipefail
 
+# command list (alternate is build the list from file system).
+declare -A commands=()
+for c in prune run; do
+  commands[$c]="tm-$c"
+done
+
 usage() {
-  commands=(prune run)
-  for command in ${commands[*]}; do
-    tm-$command --help
+  cat <<EOF
+tm [command] args
+
+command := prune | run
+
+when missing, command is assumed to be run.
+EOF
+  for c in ${commands[*]}; do
+    echo
+    echo ==========================
+    echo
+    $c --help
   done
 }
 
 command="$1"
 case $command in
   --help)
-    usage && exit 0
+    usage && exit 1
     ;;
   *)
-    shift
-    tm-$command "$@"
+    c="${commands[$command]}"
+    if [ $c ]; then
+      shift
+    else
+      c="${commands[run]}"
+    fi
+    $c "$@"
     ;;
 esac
