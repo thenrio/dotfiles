@@ -8,5 +8,6 @@ if [ ! -x $f ]; then
   echo "no such executable network: $settings ( check file $f )"
   exit 1
 fi
+shift
 
-exec $f
+exec $f $*
