@@ -1,18 +1,5 @@
-## ctags, i name them .tags
-.tags
+# ctags
+/tags
 
-## bloody pyc
+# python (enough for 2 and 3 __pycache__/*.pyc)
 *.pyc
-
-## bloody rope
-.ropeproject/
-
-## OH!!!!
-node_modules
-
-# erlang
-.eunit
-*.beam
-
-#
-.byebug_history
