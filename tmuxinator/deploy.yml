@@ -5,7 +5,7 @@ windows:
       layout: main-horizontal
       panes:
         - 
-        - workon deploy
+        - . /usr/share/virtualenvwrapper/virtualenvwrapper.sh && workon deploy
   - repl:
        - 
   - run:
