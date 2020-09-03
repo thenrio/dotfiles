@@ -28,10 +28,10 @@ $0 arg
 EOF
 }
 
-if (($# > 2)); then usage && exit 1; fi
-if (($# == 2)); then
+if (($# >= 2)); then
   template=$1
   dir=$2
+  shift 2
 else
   case $1 in
     --help)
@@ -39,6 +39,7 @@ else
       ;;
     *)
       dir=$1
+      shift
       ;;
   esac
 fi
@@ -48,7 +49,7 @@ cmd=$name
 if cd $dir 2>/dev/null; then
   cmd="${template:-$TEMPLATE} $name"
 else
-  cmd="$template $name"
+  cmd="$template $name $*"
 fi
 
 # alas, rxvt exit code does not reflect its command...
