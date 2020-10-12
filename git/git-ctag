@@ -1,0 +1,21 @@
+#!/bin/bash
+# vi: set ft=sh
+set -o errexit
+set -o pipefail
+
+USAGE="TAG"
+LONG_USAGE="$0 TAG
+Commits with TAG message and add an annotated tag.
+Changes should be staged.
+"
+
+. "$(git --exec-path)/git-sh-setup"
+
+if (($# <= 0)); then usage; exit 0; fi
+t="$1"
+if ! echo "$t" | grep -q -E "^v[0-9]*\.[0-9]*\.[0-9]*$"; then
+  die "$t MUST match v\$semver, when \$semver is a semver." 
+fi
+
+git commit -m "$t"
+git tag -a "$t" -m "$t" 
