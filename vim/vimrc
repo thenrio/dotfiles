@@ -33,12 +33,12 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
 " langages/syntax
+Plug 'HerringtonDarkholme/yats.vim'
 Plug 'Matt-Deacalion/vim-systemd-syntax', { 'for': 'sh' }
 Plug 'elixir-lang/vim-elixir',            { 'for': 'elixir' }
 Plug 'elmcast/elm-vim',                   { 'for': 'elm' }
 Plug 'fatih/vim-go',                      { 'for': 'go' }
 Plug 'jnwhiteh/vim-golang',               { 'for': 'go' }
-Plug 'leafgarland/typescript-vim'
 Plug 'pangloss/vim-javascript',           { 'for': 'javascript' }
 Plug 'plasticboy/vim-markdown',           { 'for': 'markdown' }
 Plug 'posva/vim-vue'
@@ -133,9 +133,13 @@ map tt <c-]>
 let mapleader=","
 
 " Shortcut mappings {{{
-" saves on left shift... kills ; binding in normal and visual mode
+" swap : and ;
+" Predicates: : is more used than ;, saves left shift
+" Downside: get confused on other vims
 nnoremap ; :
+nnoremap : ;
 vnoremap ; :
+vnoremap : ;
 
 " Reselect visual block after indent/outden
 vnoremap < <gv
