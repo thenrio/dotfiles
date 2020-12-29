@@ -2,5 +2,6 @@
 sudo mount /dev/sda1 /boot/efi
 sudo cp refind.conf /boot/efi/EFI/BOOT/refind.conf
 sync
-read
+echo ok
+sleep 2
 sudo reboot
