@@ -36,10 +36,9 @@ Plug 'airblade/vim-gitgutter'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'Matt-Deacalion/vim-systemd-syntax', { 'for': 'sh' }
 Plug 'elixir-lang/vim-elixir',            { 'for': 'elixir' }
-Plug 'elmcast/elm-vim',                   { 'for': 'elm' }
 Plug 'fatih/vim-go',                      { 'for': 'go' }
 Plug 'jnwhiteh/vim-golang',               { 'for': 'go' }
-Plug 'pangloss/vim-javascript',           { 'for': 'javascript' }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'plasticboy/vim-markdown',           { 'for': 'markdown' }
 Plug 'posva/vim-vue'
 Plug 'rust-lang/rust.vim'
@@ -56,7 +55,7 @@ call plug#end()
 " }}}
 "
 
-" http://mislav.uniqpath.com/2011/12/vim-revisited/
+" http://mislav.net/2011/12/vim-revisited/
 " http://nvie.com/posts/how-i-boosted-my-vim/
 set showcmd                     " display incomplete commands
 
@@ -133,13 +132,17 @@ map tt <c-]>
 let mapleader=","
 
 " Shortcut mappings {{{
+"
+" https://nvie.com/posts/how-i-boosted-my-vim/#get-efficient-shortcut-mappings
 " swap : and ;
 " Predicates: : is more used than ;, saves left shift
-" Downside: get confused on other vims
-nnoremap ; :
-nnoremap : ;
+" Downside: 
+" * breaks map where rhs has : :)
+" * get confused on other vims?
+noremap ; :
 vnoremap ; :
-vnoremap : ;
+" nnoremap : ;
+" vnoremap : ;
 
 " Reselect visual block after indent/outden
 vnoremap < <gv
@@ -180,3 +183,4 @@ endfunction
 
 nmap <leader>s :call StripWhitespace()<CR>:w<CR>
 " }}}
+"
