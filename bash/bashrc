@@ -2,18 +2,12 @@
 # append a self bin path
 export PATH=$PATH:$HOME/bin
 
-# dircolors has effect ls program
-#
-# https://github.com/seebi/dircolors-solarized#installation
-# TERM=xterm-256color is defined in ~/.Xresources
-# see http://blog.sanctum.geek.nz/term-strings
-#
-# this ~/.dircolors files is NOT in git, use curl to fetch it
-# https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.ansi-dark
+# (eval of dircolors output) has effect on ls program.
+# see dircolors/makefile
 #
 eval "$(dircolors $HOME/.dircolors)"
 
-# langs ( python crash )
+# langs (python crash)
 # http://patrick.arminio.info/blog/2012/02/fix-valueerror-unknown-locale-utf8/
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
