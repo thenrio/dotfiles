@@ -1,0 +1,10 @@
+[Unit]
+Description=Initialize xrdb once
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/xrdb -all -load $HOME/.Xresources
+
+[Install]
+After=graphical.target
