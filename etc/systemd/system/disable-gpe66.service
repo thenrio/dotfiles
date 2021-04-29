@@ -2,6 +2,19 @@
 #
 # systemctl enable /home/thenrio/src/dotfiles/etc/systemd/system/disable-gpe66.service
 #
+# detect with
+# /sys/firmware/acpi/interrupts $ for f in gpe??; do (echo -n "$f "; cat $f); done | sed -E 's/\s+/,/g' | tee ~/tmp/gpe | sort -t, -k2 --numeric-sort | tail
+# gpe78,0,invalid,unmasked
+# gpe79,0,invalid,unmasked
+# gpe7A,0,invalid,unmasked
+# gpe7B,0,invalid,unmasked
+# gpe7C,0,invalid,unmasked
+# gpe7D,0,invalid,unmasked
+# gpe7E,0,invalid,unmasked
+# gpe7F,0,invalid,unmasked
+# gpe4E,37129,EN,enabled,unmasked
+# gpe66,53437787,EN,STS,enabled,unmasked
+#
 [Unit]
 Description=disabled gpe66
 
