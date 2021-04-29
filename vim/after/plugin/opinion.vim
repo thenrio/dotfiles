@@ -4,7 +4,7 @@
 
 set mouse= " I prefer no mouse!
 set nonu " airline shows current line / total line, I trade the size of the line number bar!
-
+set nogdefault " need explicit g at end of s//
 " }}
 
 " {{ own stuff
