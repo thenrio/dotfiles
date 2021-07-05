@@ -1,7 +1,14 @@
-function parse_git_dirty {
-  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working tree clean" ]] && echo "*"
+function git-current-branch() {
+  git rev-parse --abbrev-ref HEAD 2>/dev/null
 }
-function parse_git_branch {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/[\1$(parse_git_dirty)]/"
+
+function git-ps1() {
+  if git-current-branch >/dev/null; then
+    echo -n "[$(git-current-branch)"
+    if git status 2>/dev/null | tail -1 | grep -q -v "^nothing to commit"; then 
+      echo -n "*"
+    fi
+    echo -n "]"
+  fi
 }
-export PS1="\[\033[1;33m\]\w\[\033[0m\] \$(parse_git_branch)\$ "
+export PS1="\[\033[1;33m\]\w\[\033[0m\] \$(git-ps1)\$ "
