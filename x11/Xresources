@@ -15,16 +15,24 @@
 ! * http://unix.stackexchange.com/questions/196488/set-urxvt-to-work-with-256-colors
 !
 ! also see https://wiki.archlinux.org/index.php/X_resources for details on this file
-!
-! could break monolith ~/.Xresources with includes!
-! not sure yet :)
-!
 
 URxvt.geometry:         74x27
 URxvt.iso14755:         false
 URxvt.intensityStyles:  false
 URxvt.perl-ext-common:  clipboard,fullscreen
 URxvt.transparent:      true
+
+! clipboard is a deprecated extension!
+! https://github.com/muennich/urxvt-perls/blob/master/deprecated/clipboard
+! still, remove it does not fit the bill:
+!
+! a) selection goes to clipboard
+! b) paste copy clipboard preserving utf8
+! 
+! without clipboard, I do not have a, I need to copy.
+! default copy command does not preserve utf8, this one do:
+URxvt.clipboard.copycmd:  xclip -i -selection clipboard
+URxvt.clipboard.pastecmd: xclip -o -selection clipboard
 
 #include ".Xresources.d/fonts"
 #include ".Xresources.d/colors"
