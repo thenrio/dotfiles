@@ -4,6 +4,12 @@
     "javascript",
     "typescript",
     "json",
+    "toml",
     "vue"
-  ]
+  ],
+  // elixir
+  "elixir.pathToElixirLS": "/opt/code/elixir-lsp/elixir-ls/release/language_server.sh",
+  "elixirLS.dialyzerEnabled": false,
+  // rust, do not show typing hints
+  "rust-analyzer.inlayHints.enable": false
 }

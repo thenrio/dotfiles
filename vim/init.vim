@@ -1,7 +1,7 @@
 " from https://github.com/rstacruz/vim-from-scratch
 set nocompatible
 
-" let it in after/plugin (say opinion.vim) is not succesfull, as an earlier
+" let it in after/plugin (say opinion.vim) is not successful, as an earlier
 " file (say fzf.vim) will have incorrect <leader> expansion in a map.
 " 
 let g:mapleader=" "
@@ -32,10 +32,12 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-fugitive'
 
 " status line, gutter
-Plug 'itchyny/lightline.vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'itchyny/lightline.vim'
 
 " langages/syntax
+Plug 'elixir-editors/vim-elixir'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'sheerun/vim-polyglot'
 
 " coc
@@ -48,5 +50,8 @@ Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-tslint', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
+
+" Snippets are separated, this is a popular collection.
+Plug 'honza/vim-snippets'
 
 call plug#end()

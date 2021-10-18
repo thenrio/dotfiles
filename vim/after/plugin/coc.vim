@@ -47,6 +47,8 @@ nnoremap <silent> <leader>cx  :<C-u>CocList extensions<cr>
 
 " rename the current word in the cursor
 nmap <leader>cr  <Plug>(coc-rename)
+
+" format
 nmap <leader>cf  <Plug>(coc-format-selected)
 vmap <leader>cf  <Plug>(coc-format-selected)
 
