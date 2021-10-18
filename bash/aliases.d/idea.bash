@@ -1,1 +1,1 @@
-alias idea="/opt/idea-IC-203.7717.56/bin/idea.sh >&/dev/null"
+alias idea="/opt/idea-IC-212.4746.92/bin/idea.sh >&/dev/null"
