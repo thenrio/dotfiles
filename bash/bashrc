@@ -31,7 +31,7 @@ for f in ${__dirname__}/sources.d/* ; do . $f; done
 for f in ${__dirname__}/aliases.d/* ; do . $f; done
 
 # editor
-export EDITOR="vim"
+export EDITOR="nvim"
 
 # rbenv
 export PATH="$PATH:$HOME/.rbenv/bin"
