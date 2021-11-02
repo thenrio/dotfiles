@@ -5,4 +5,4 @@ After=graphical.target
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-ExecStart=/usr/bin/xrdb -all -load $HOME/.Xresources
+ExecStart=/usr/bin/urxvt -e "/usr/bin/xrdb -all -load $HOME/.Xresources"
