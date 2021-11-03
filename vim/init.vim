@@ -39,6 +39,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'elixir-editors/vim-elixir'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'sheerun/vim-polyglot'
+Plug 'slim-template/vim-slim'
 
 " coc
 " also from https://github.com/rstacruz/vim-coc-settings
