@@ -20,6 +20,7 @@ if [ -z "$PS1" ]; then
 fi
 
 set -o vi
+
 # FIXME __dirname__=`dirname $(readlink "$0")`
 # http://stackoverflow.com/questions/59895/can-a-bash-script-tell-what-directory-its-stored-in
 # a real mess
@@ -36,5 +37,10 @@ export EDITOR="nvim"
 # rbenv
 export PATH="$PATH:$HOME/.rbenv/bin"
 eval "$(rbenv init -)"
+
+# direnv
+# https://github.com/direnv/direnv/issues/68
+export DIRENV_LOG_FORMAT=""
+eval "$(direnv hook bash)"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
