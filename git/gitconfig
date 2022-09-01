@@ -10,9 +10,10 @@
 [github]
 	user = thenrio
 [merge]
-	conflictstyle = diff3	
+	conflictstyle = diff3
 	tool = fugitive
 [core]
+	editor = nvim --noplugin
 	excludesfile = ~/.gitignore
 [branch]
 	autosetuprebase = always
@@ -20,7 +21,7 @@
   add-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; git add `f`"
   ci = commit
   edit-conflict = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; vim `f`"
-  l  = log --pretty=oneline --abbrev-commit
+  l = log --pretty=oneline --abbrev-commit
 	lg = log --graph --pretty=format:'%Cred%h%Creset - %Cgreen%cd%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset' --abbrev-commit --date=iso
   st = status -sb
 [rerere]
@@ -29,8 +30,24 @@
 	default = upstream
 	followTags = true
 [mergetool "fugitive"]
-	cmd = vim -f -c \"Gvdiff\" \"$MERGED\"
+	cmd = nvim -f -c \"Gvdiffsplit!\" \"$MERGED\"
 [url "https://"]
 	insteadOf = git://
 [credential]
 	helper = cache --timeout=3600
+[filesystem "Debian|1.8.0_242|/dev/sda5"]
+	timestampResolution = 2001 microseconds
+	minRacyThreshold = 5933 microseconds
+[filesystem "Debian|1.8.0_252-ea|/dev/sda5"]
+	timestampResolution = 1001 microseconds
+	minRacyThreshold = 5667 microseconds
+[fetch]
+	prune = true
+[filesystem "Debian|1.8.0_265|/dev/sda5"]
+	timestampResolution = 1001 microseconds
+	minRacyThreshold = 4045 microseconds
+[filesystem "Debian|1.8.0_265|/dev/sdb5"]
+	timestampResolution = 4001 microseconds
+	minRacyThreshold = 0 nanoseconds
+[init]
+	defaultBranch = main
