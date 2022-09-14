@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-PROXY=${PROXY:-"http://localhost:3128"}
-http_proxy=${PROXY} \
-https_proxy=${PROXY} \
-HTTP_PROXY=${PROXY} \
-HTTPS_PROXY=${PROXY} \
-ALL_PROXY=${PROXY} \
-$@
