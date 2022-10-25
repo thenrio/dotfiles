@@ -51,3 +51,5 @@
 	minRacyThreshold = 0 nanoseconds
 [init]
 	defaultBranch = main
+[safe]
+	directory = /etc
