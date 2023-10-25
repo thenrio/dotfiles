@@ -5,4 +5,4 @@
 # * use precompiled package?
 # * use a link indirection (update-alternatives)
 # export PATH=/opt/src/elixir-lang/elixir/bin:$PATH
-export PATH=/opt/elixir/1.14.3/bin:$PATH
+export PATH=/opt/elixir/1.15.6-25/bin:$PATH

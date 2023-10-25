@@ -9,7 +9,7 @@
     "vue"
   ],
   // elixir
-  "elixir.pathToElixirLS": "/opt/elixir-ls/0.11/language_server.sh",
+  "elixir.pathToElixirLS": "/opt/elixir-ls/0.16.0/language_server.sh",
   "elixirLS.dialyzerEnabled": false,
   // rust, do not show typing hints
   "rust-analyzer.inlayHints.enable": false
