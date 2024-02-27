@@ -1,22 +1,3 @@
-[color]
-	branch = auto
-	diff = auto
-	interactive = auto
-	status = auto
-[user]
-	name = thenrio
-	email = thierry.henrio@gmail.com
-	signingkey = 0283188174C66EB7A43302DD449505A931052A66
-[github]
-	user = thenrio
-[merge]
-	conflictstyle = diff3
-	tool = fugitive
-[core]
-	editor = nvim --noplugin
-	excludesfile = ~/.gitignore
-[branch]
-	autosetuprebase = always
 [alias]
   add-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; git add `f`"
   ci = commit
@@ -24,17 +5,42 @@
   l = log --pretty=oneline --abbrev-commit
 	lg = log --graph --pretty=format:'%Cred%h%Creset - %Cgreen%cd%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset' --abbrev-commit --date=iso
   st = status -sb
-[rerere]
-	enabled = 1
+[branch]
+	autosetuprebase = always
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[commit]
+	verbose = true
+[core]
+	editor = nvim --noplugin
+	excludesfile = ~/.gitignore
+[credential]
+	helper = cache --timeout=3600
+[github]
+	user = thenrio
+[init]
+	defaultBranch = main
+[merge]
+	conflictstyle = diff3
+	tool = fugitive
+[mergetool "fugitive"]
+	cmd = nvim -f -c \"Gvdiffsplit!\" \"$MERGED\"
 [push]
 	default = upstream
 	followTags = true
-[mergetool "fugitive"]
-	cmd = nvim -f -c \"Gvdiffsplit!\" \"$MERGED\"
+[safe]
+	directory = /etc
+[rerere]
+	enabled = 1
 [url "https://"]
 	insteadOf = git://
-[credential]
-	helper = cache --timeout=3600
+[user]
+	name = thenrio
+	email = thierry.henrio@gmail.com
+	signingkey = 0283188174C66EB7A43302DD449505A931052A66
 [filesystem "Debian|1.8.0_242|/dev/sda5"]
 	timestampResolution = 2001 microseconds
 	minRacyThreshold = 5933 microseconds
@@ -49,7 +55,3 @@
 [filesystem "Debian|1.8.0_265|/dev/sdb5"]
 	timestampResolution = 4001 microseconds
 	minRacyThreshold = 0 nanoseconds
-[init]
-	defaultBranch = main
-[safe]
-	directory = /etc
