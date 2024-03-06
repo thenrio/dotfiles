@@ -12,5 +12,9 @@
   "elixir.pathToElixirLS": "/opt/elixir-ls/0.16.0/language_server.sh",
   "elixirLS.dialyzerEnabled": false,
   // rust, do not show typing hints
-  "rust-analyzer.inlayHints.enable": false
+  "rust-analyzer.inlayHints.enable": false,
+  // python neither
+  "pyright.inlayHints.functionReturnTypes": false,
+  "pyright.inlayHints.parameterTypes": false,
+  "pyright.inlayHints.variableTypes": false
 }
