@@ -13,7 +13,7 @@ $(HOME)/.%: %
 	@ln -sfv $(realpath $<) $@
 
 $(COLORS): 
-	@ln -sfv dark $@
+	@ln -sfv .Xresources.dark $@
 
 # Xresources predicates it has a sibling .Xresources.d, 
 # we can build it once installed
