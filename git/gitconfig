@@ -55,3 +55,5 @@
 [filesystem "Debian|1.8.0_265|/dev/sdb5"]
 	timestampResolution = 4001 microseconds
 	minRacyThreshold = 0 nanoseconds
+[diff]
+	algorithm = histogram
