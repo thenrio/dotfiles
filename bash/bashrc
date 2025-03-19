@@ -1,7 +1,3 @@
-# see /etc/paths
-# append a self bin path
-export PATH=$PATH:$HOME/bin
-
 # (eval of dircolors output) has effect on ls program.
 # see dircolors/makefile
 #
